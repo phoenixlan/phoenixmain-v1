@@ -35,4 +35,4 @@ jobs:
           context: .
           push: true
           tags: |
-            web/phoenixmain-v1:latest
+            docker.infra.phoenixlan.no/web/phoenixmain-v1:latest
