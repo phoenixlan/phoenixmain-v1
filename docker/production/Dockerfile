@@ -3,6 +3,7 @@ FROM node:current as build
 ARG API_URL
 ARG APP_HOST
 ARG APP_PROTOCOL
+
 COPY . .
 RUN yarn install
 RUN yarn build

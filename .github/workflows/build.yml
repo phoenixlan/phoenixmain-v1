@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           build-args: |
-            API_URI=https://api.test.phoenixlan.no
+            API_URL=https://api.test.phoenixlan.no
             APP_HOST=test.phoenixlan.no
             APP_PROTOCOL=https
           file: "docker/production/Dockerfile"
