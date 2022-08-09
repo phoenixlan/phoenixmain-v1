@@ -1,0 +1,6 @@
+Contact: mailto:tech-security@phoenixlan.no
+Expires: 2025-12-31T11:00:00.000Z
+Acknowledgments: https://tech.phoenixlan.no/hall-of-fame
+Preferred-Languages: nb-NO
+Canonical: https://phoenixlan.no/.well-known/security.txt
+Policy: https://tech.phoenixlan.no/security

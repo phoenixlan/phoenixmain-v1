@@ -1,0 +1,36 @@
+name: build-library
+on: 
+ - push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: yarn
+      - run: yarn build
+  build_docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          registry: docker.infra.phoenixlan.no
+          username: ${{ secrets.REGISTRY_USERNAME}}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+      - name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          build-args: |
+            API_URI=https://api.test.phoenixlan.no
+            APP_HOST=test.phoenixlan.no
+            APP_PROTOCOL=https
+          push: true
+          tags: |
+            web/phoenixmain-v1:latest
