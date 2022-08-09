@@ -35,4 +35,5 @@ jobs:
           context: .
           push: true
           tags: |
-            docker.infra.phoenixlan.no/web/phoenixmain-v1:latest
+            docker.infra.phoenixlan.no/web/${{ github.event.repository.name }}:latest
+            docker.infra.phoenixlan.no/web/${{ github.event.repository.name }}:${{ github.sha }}
