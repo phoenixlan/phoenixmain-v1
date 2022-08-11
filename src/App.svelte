@@ -17,7 +17,6 @@
 	import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 
 	import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-	import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 	import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 	export let url = "";
@@ -48,6 +47,13 @@
 	<footer class="samarbeidspartnere">
 		<h2>Phoenix LAN på sosiale medier</h2>
 		<div class="some-list">
+			<a href="https://www.instagram.com/phoenixlan.no/">
+					<Fa icon={faInstagram} />
+			</a>
+			<a href="https://www.facebook.com/phoenixlan.no">
+					<Fa icon={faFacebook} />
+			</a>
+
 		</div>
 		<h2>Samarbeidspartnere</h2>
 		<div class="sponsors">
