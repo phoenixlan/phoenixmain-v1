@@ -3,7 +3,7 @@ import PageHeader from '../components/PageHeader.svelte';
 
 const legal = [
     "Datamaskin(eller spillkonsoll) med alt tilbehør",
-    "Nettverkskabel med en minumumslengde på 10 meter. Infected har ikke trådløst nett for deltakere.",
+    "Nettverkskabel med en minumumslengde på 10 meter. Vi har ikke trådløst nett for deltakere.",
     "Strømpad/strømforgrener, det er beregnet et strømuttak per person.",
     "Tannbørste og andre hygieneartikler.",
     "Penger.",

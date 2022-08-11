@@ -103,6 +103,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		<p>Høstens LAN vil først og fremst bli holdt som et kontinuitetslan I kjølvannet av nedstengningen av Infected LAN, slik at det alltid er LAN i Asker. Til våren vil vi fokusere mer på fysiske aktiviteter, og oppfordrer alle ungdom som er interessert i å hjelpe til med dette å søke crew.</p>
 
 		<div class="button_container">
+			<!--
             <Link to="/foreldre">
                 <div class="article_link_container">
                     <h2>Forelder?</h2>
@@ -112,10 +113,11 @@ Liker du programmering og teknologi? Søk Tech, da vel!
                     </div>
                 </div>
             </Link>
+-->
             <Link to="/regler">
                 <div class="article_link_container">
                     <h2>Regler og sikkerhet</h2>
-                    <p>Radar er et <b>rusfritt</b> område, dette <strong style="color: red;">gjelder også snus og røyk</strong>. Det er ikke lov å røyke eller snuse under Infected.</p>
+                    <p>Radar er et <b>rusfritt</b> område, dette <strong style="color: red;">gjelder også snus og røyk</strong>. Det er ikke lov å røyke eller snuse under Phoenix LAN.</p>
                     <div class="article-icon">
                     <Fa icon={faShieldAlt} />
                     </div>
