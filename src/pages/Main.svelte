@@ -82,8 +82,8 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 					</a>
 				</div>
 				<div class="ticketDetail">
-					<h3>{new Date(data.event.start_time*1000).toLocaleString('no-NO', localeFormatSettings)} til {new Date(data.event.end_time*1000).toLocaleString('no-NO', localeFormatSettings)}</h3>
-					<h3>Billetter slipper {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}</h3>
+					<h3>{new Date(data.event.start_time*1000).toLocaleString('no-NO', localeFormatSettings)} til {new Date(data.event.end_time*1000).toLocaleString('no-NO', localeFormatSettings)}{(data.event.location?.name) ? (" I " + data.event.location.name) : ""}</h3>
+					<h3>Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}</h3>
 					{#if data.ticket_types.length > 0}
 						<h3>Fra {getMinTicketPrice(data.ticket_types)},- til {getMaxTicketPrice(data.ticket_types)},-</h3>
 					{/if}
@@ -96,7 +96,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	</div>
 	<div class="explanation">
 		<h2>Om arrangementet</h2>
-		<p>Phoenix LAN er en møteplass for ungdom der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med.</p>
+		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med.</p>
 		
 		<p>Et LAN-party var opprinnelig et arrangement der fokus var å bruke datamaskin. Før fiber spredde seg i Norge var det vanlig å besøke LAN for å oppleve hvordan det var å surfe på nettet med rask tilkobling. I dag er LAN-parties mindre nødvendig, men brukes enda som en møteplass for folk interessert i digital kultur. </p>
 
