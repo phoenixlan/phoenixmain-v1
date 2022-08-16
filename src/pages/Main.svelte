@@ -96,11 +96,25 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	</div>
 	<div class="explanation">
 		<h2>Om arrangementet</h2>
-		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med.</p>
+		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med. I første omgang vil aldersgrensen være 8. klasse til fylt 25 år.</p>
 		
-		<p>Et LAN-party var opprinnelig et arrangement der fokus var å bruke datamaskin. Før fiber spredde seg i Norge var det vanlig å besøke LAN for å oppleve hvordan det var å surfe på nettet med rask tilkobling. I dag er LAN-parties mindre nødvendig, men brukes enda som en møteplass for folk interessert i digital kultur. </p>
+		<p>Et LAN-party var opprinnelig et arrangement der fokus var å samles under samme tak for å spille på datamaskinen. Spill pleide ikke å tillate å spille over nettet i stor grad, og det var ofte kultur for å samles slik at man kunne spille lokalt i stedet. Før fiber spredde seg i Norge var det også populært å besøke LAN for å oppleve hvordan det var å surfe på nettet med rask tilkobling, da LAN ofte hadde vesentlig bedre linje enn det en kunne få hjemme. I dag er LAN-parties mindre nødvendig, men brukes enda som en møteplass for folk interessert i digital kultur. </p>
 
 		<p>Høstens LAN vil først og fremst bli holdt som et kontinuitetslan I kjølvannet av nedstengningen av Infected LAN, slik at det alltid er LAN i Asker. Til våren vil vi fokusere mer på fysiske aktiviteter, og oppfordrer alle ungdom som er interessert i å hjelpe til med dette å søke crew.</p>
+
+		<h2>Bli med på å arrangere moroa</h2>
+
+		<p>Phoenix LAN er et ungdomsarrangement der ungdom står for mye av den frivillige kraften bak arrangementet. Vi vil aldri kunne være noe uten de frivillige som står på for at lanet skal kunne gå rundt. På Phoenix finnes det mange grupper med forskjellige arbeidsoppgaver, fra vertskap og mat, konkurranser og underholdning, til drift av det tekniske.</p>
+
+		<p>Vil du være med på å arrangere en plattform der likesinnede kan møtes for å delta i digital kultur trenger vi <b>DEG</b>!</p>
+
+		<div class="button_container ticket_button_container">
+			<a href="https://delta.phoenixlan.no/">
+				<div class="buy_ticket_btn">
+					<h2>Søk crew</h2>
+				</div>
+			</a>
+		</div>
 
 		<div class="button_container">
 			<!--
@@ -117,7 +131,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
             <Link to="/regler">
                 <div class="article_link_container">
                     <h2>Regler og sikkerhet</h2>
-                    <p>Radar er et <b>rusfritt</b> område, dette <strong style="color: red;">gjelder også snus og røyk</strong>. Det er ikke lov å røyke eller snuse under Phoenix LAN.</p>
                     <div class="article-icon">
                     <Fa icon={faShieldAlt} />
                     </div>
@@ -134,7 +147,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 			<Link to="/pakkeliste">
                 <div class="article_link_container">
                     <h2>Pakkeliste</h2>
-                    <p>Vi i crewet har laget en hendig pakkeliste over ting man bør ha med på LAN.</p>
                     <div class="article-icon">
                     <Fa icon={faList} />
                     </div>
