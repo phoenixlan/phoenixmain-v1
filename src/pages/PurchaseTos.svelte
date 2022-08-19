@@ -1,7 +1,7 @@
 <script>
     import SvelteMarkdown from 'svelte-markdown'
-import { Link } from 'svelte-routing';
 
+    import Logo from '../components/Logo.svelte';
 import PageHeader from '../components/PageHeader.svelte';
 
     const API_URL = __myapp.env.API_URL
@@ -10,16 +10,15 @@ import PageHeader from '../components/PageHeader.svelte';
     console.log(__myapp.env)
 
     const fetchArticle = (async () => {
-        return await (await fetch(`${API_URL}/static/tos/rules.md`)).text()
+        return await (await fetch(`${API_URL}/static/tos/payment.md`)).text()
     })()
 </script>
 
 <div class="contentSimulator">
-    <PageHeader><h1>Regler og sikkerhet</h1></PageHeader>
+    <PageHeader><h1>Salgsbetingelser</h1></PageHeader>
     <div class="content">
-        <p>Du kan også lese våre salgsbetingelser<Link to="/salgsbetingelser">her</Link></p>
         {#await fetchArticle}
-        <i>Henter regler</i>
+        <i>Henter kjøpsvilkår</i>
         {:then data}
         <div class="rules">
             <SvelteMarkdown source={ data } />
@@ -31,12 +30,10 @@ import PageHeader from '../components/PageHeader.svelte';
 </div>
 
 <style>
-
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #111111;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 

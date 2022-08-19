@@ -17,6 +17,7 @@
 <div class="contentSimulator">
     <PageHeader><h1>Agenda</h1></PageHeader>
     <div class="content">
+        <p>Agenda har ikke sluppet enda</p>
         <!-- 
         {#await fetchAgenda}
         <i>Henter agenda</i>
@@ -26,6 +27,7 @@
         <b>Kunne ikke hente data</b>
         {/await}
         -->
+        <!--
         <div class="calendarContainer">
             <div class="day">
                 <div class="dayTitle">Hele helgen</div>
@@ -103,6 +105,7 @@
 
 
         </div>
+-->
     </div>
 </div>
 

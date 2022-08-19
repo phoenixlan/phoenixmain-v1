@@ -9,6 +9,7 @@
 	import Parents from './pages/Parents.svelte'
 	import AtTheEvent from './pages/AtTheEvent.svelte'
 	import Competitions from './pages/Competitions.svelte'
+	import PurchaseTos from './pages/PurchaseTos.svelte'
 
 	import { faChild } from '@fortawesome/free-solid-svg-icons'
 	import { faShieldAlt } from '@fortawesome/free-solid-svg-icons'
@@ -36,6 +37,7 @@
 	<main>
 		<Route path="pakkeliste" component="{Packing}" />
 		<Route path="regler" component="{Rules}" />
+		<Route path="salgsbetingelser" component={PurchaseTos} />
 		<Route path="agenda" component="{Agenda}" />
 		<Route path="foreldre" component="{Parents}" />
 		<Route path="pa_phoenix" component="{AtTheEvent}" />
