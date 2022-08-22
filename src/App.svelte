@@ -10,6 +10,7 @@
 	import AtTheEvent from './pages/AtTheEvent.svelte'
 	import Competitions from './pages/Competitions.svelte'
 	import PurchaseTos from './pages/PurchaseTos.svelte'
+	import WhatIsALan from './pages/WhatIsALan.svelte';
 
 	import { faChild } from '@fortawesome/free-solid-svg-icons'
 	import { faShieldAlt } from '@fortawesome/free-solid-svg-icons'
@@ -38,6 +39,7 @@
 		<Route path="pakkeliste" component="{Packing}" />
 		<Route path="regler" component="{Rules}" />
 		<Route path="salgsbetingelser" component={PurchaseTos} />
+		<Route path="hvaErEtLan" component={WhatIsALan} />
 		<Route path="agenda" component="{Agenda}" />
 		<Route path="foreldre" component="{Parents}" />
 		<Route path="pa_phoenix" component="{AtTheEvent}" />

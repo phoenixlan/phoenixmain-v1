@@ -16,6 +16,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	import { faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 	import { faList } from '@fortawesome/free-solid-svg-icons'
 	import { faTrophy } from '@fortawesome/free-solid-svg-icons'
+	import { faEthernet } from '@fortawesome/free-solid-svg-icons';
 	import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 	import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 	import Background from '../components/Background.svelte';
@@ -96,9 +97,9 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	</div>
 	<div class="explanation">
 		<h2>Om arrangementet</h2>
-		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med. I første omgang vil aldersgrensen være 8. klasse til fylt 25 år.</p>
-		
-		<p>Et LAN-party var opprinnelig et arrangement der fokus var å samles under samme tak for å spille på datamaskinen. Spill pleide ikke å tillate å spille over nettet i stor grad, og det var ofte kultur for å samles slik at man kunne spille lokalt i stedet. Før fiber spredde seg i Norge var det også populært å besøke LAN for å oppleve hvordan det var å surfe på nettet med rask tilkobling, da LAN ofte hadde vesentlig bedre linje enn det en kunne få hjemme. I dag er LAN-parties mindre nødvendig, men brukes enda som en møteplass for folk interessert i digital kultur. </p>
+
+		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med. </p>
+		<p>I første omgang vil aldersgrensen være 8. klasse til fylt 25 år.</p>
 
 		<p>Høstens LAN vil først og fremst bli holdt som et kontinuitetslan I kjølvannet av nedstengningen av Infected LAN, slik at det alltid er LAN i Asker. Til våren vil vi fokusere mer på fysiske aktiviteter, og oppfordrer alle ungdom som er interessert i å hjelpe til med dette å søke crew.</p>
 
@@ -128,6 +129,14 @@ Liker du programmering og teknologi? Søk Tech, da vel!
                 </div>
             </Link>
 -->
+            <Link to="/hvaErEtLan">
+                <div class="article_link_container">
+                    <h2>Hva er et LAN?</h2>
+                    <div class="article-icon">
+                    <Fa icon={faEthernet} />
+                    </div>
+                </div>
+            </Link>
             <Link to="/regler">
                 <div class="article_link_container">
                     <h2>Regler og sikkerhet</h2>
@@ -403,7 +412,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		color: #ffffff;
 		max-width: 60em;
 		margin: 1em auto 3em auto;
-		padding: 0 3em 0 3em;
 		line-height: 1.5em;
 	}
 
