@@ -99,7 +99,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		<h2>Om arrangementet</h2>
 
 		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med. </p>
-		<p>I første omgang vil aldersgrensen være 8. klasse til fylt 25 år.</p>
+		<p>I første omgang vil aldersgrensen være 8. klasse til og med fylt 25 år.</p>
 
 		<p>Høstens LAN vil først og fremst bli holdt som et kontinuitetslan I kjølvannet av nedstengningen av Infected LAN, slik at det alltid er LAN i Asker. Til våren vil vi fokusere mer på fysiske aktiviteter, og oppfordrer alle ungdom som er interessert i å hjelpe til med dette å søke crew.</p>
 
