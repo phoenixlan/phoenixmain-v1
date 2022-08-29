@@ -127,7 +127,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		</div>
 
 		<div class="button_container">
-			<!--
             <Link to="/foreldre">
                 <div class="article_link_container">
                     <h2>Forelder?</h2>
@@ -137,7 +136,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
                     </div>
                 </div>
             </Link>
--->
             <Link to="/hvaErEtLan">
                 <div class="article_link_container">
                     <h2>Hva er et LAN?</h2>
