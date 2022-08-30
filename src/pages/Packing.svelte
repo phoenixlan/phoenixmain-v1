@@ -10,10 +10,10 @@ const legal = [
     "Vann eller brus. Eventuelt lukkbar vannflaske.",
     "Eventuelle medisiner hvis man trenger det (Ta kontakt med crew hvis det er noe vi bør vite).",
     "Din billett",
-    "Foreldreattest dersom du er under 14, eller er under 15 og ønsker å være ute mellom 23:00 og 7:00",
     "Sovepose.",
     "Gyldig legitimasjon. (Pass, bankkort med bilde, førerkort). Studentkort er ikke gyldig legitimasjon."
 ];
+// TODO re-add foreldreattest later
 const illegal = [
     "Alkohol eller andre rusmidler.",
     "Høytalere.",
