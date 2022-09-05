@@ -8,36 +8,29 @@ import PageHeader from "../components/PageHeader.svelte";
     <PageHeader><h1>Konkurranser</h1></PageHeader>
     <div class="content">
         <div class="content-inner">
-            <h2>Konkurransene har ikke blitt sluppet enda...</h2>
-            
+            <h2>CS:GO Wingman 2v2</h2>
+            <p>Mer informasjon kommer</p>
+            <h2>Minecraft Battle Royale</h2>
+            <p>Alle vs alle, Hunger Games style. Bare den beste vil stå igjen til slutt</p>
+            <h2>Minecraft Build Battle</h2>
+            <p>En jury kårer beste build. Konkurransen starter når dørene åpner</p>
+            <h2>Phoenix Datasnok</h2>
+            <p>Er <b>DU</b> god på data? Vis dine ferdigheter ved å delta på Datasnok, en "hacke-rebus" du vinner ved å løse oppgaver av forskjellig vanskelighetsgrad.</p>
+            <h2>Mange småkonkurranser</h2>
+            <p>I løpet av LANet vil det arrangeres tilfeldige småkonkurranser du kan delta på for å få et avbrekk fra dine vanlige spill. Noen vil være fysiske, andre vil være digitale.</p>
         </div>
     </div>
 
 </div>
 
 <style>
-.contentSimulator {
-
+p {
+    max-width: 60em;
 }
-
-.splash {
-    min-height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-.splash-inner {
-    margin-top: 2em;
-}
-
-.splash-inner > img {
-    width: 20em;
-}
-
 .content {
     padding: 1rem;
     background-color: #111111;
+    display: flex;
+    justify-content: center;
 }
 </style>

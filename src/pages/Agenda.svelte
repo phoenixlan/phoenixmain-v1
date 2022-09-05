@@ -17,7 +17,6 @@
 <div class="contentSimulator">
     <PageHeader><h1>Agenda</h1></PageHeader>
     <div class="content">
-        <p>Agenda har ikke sluppet enda</p>
         <!-- 
         {#await fetchAgenda}
         <i>Henter agenda</i>
@@ -27,21 +26,21 @@
         <b>Kunne ikke hente data</b>
         {/await}
         -->
-        <!--
         <div class="calendarContainer">
             <div class="day">
-                <div class="dayTitle">Hele helgen</div>
+                <div class="dayTitle">Hele arrangementet</div>
                 <div class="dayEntry">
                     <p class="entryTitle">Minecraft build battle</p>
                     <p class="entryDesc"><code>mc.phoenixlan.no</code></p>
-                    <p class="entryTime">Fra fredag 18:00</p>
+                    <p class="entryTime">Fra lørdag 1d:00</p>
                 </div>
                 <div class="dayEntry">
                     <p class="entryTitle">Phoenix datasnok</p>
                     <p class="entryDesc">Tech-konkurranse: <code>datasnok.phoenixlan.no</code></p>
-                    <p class="entryTime">Fra fredag 20:00</p>
+                    <p class="entryTime">Fra lørdag 20:00</p>
                 </div>
             </div>
+            <!--
             <div class="day">
                 <div class="dayTitle">Fredag</div>
                 <div class="dayEntry">
@@ -99,13 +98,9 @@
                     <p class="entryDesc">Build battle og datasnok</p>
                     <p class="entryTime">17:45</p>
                 </div>
-
-
             </div>
-
-
-        </div>
 -->
+        </div>
     </div>
 </div>
 
