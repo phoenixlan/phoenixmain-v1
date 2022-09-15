@@ -90,12 +90,14 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 				<div class="ticketDetail">
 					<h3>{new Date(data.event.start_time*1000).toLocaleString('no-NO', localeFormatSettings)} til {new Date(data.event.end_time*1000).toLocaleString('no-NO', localeFormatSettings)}{(data.event.location?.name) ? (" I " + data.event.location.name) : ""}</h3>
 					{#if data.event.booking_time < new Date().getTime()/1000}
-					<h3>{data.ticket_availability.total} av {data.event.max_participants} billetter igjen</h3>
+					<h3>{data.ticket_availability.total} billetter igjen</h3>
 					{:else}
-					<h3>Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}</h3>
+					<h3>
+						Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}
+					</h3>
 					{/if}
 					{#if data.ticket_types.length > 0}
-						<h3>Fra {getMinTicketPrice(data.ticket_types)},- til {getMaxTicketPrice(data.ticket_types)},-</h3>
+						<h3>Fra {getMinTicketPrice(data.ticket_types)},- </h3>
 					{/if}
 				</div>
 				{:catch error}
