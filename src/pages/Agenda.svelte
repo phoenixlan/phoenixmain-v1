@@ -50,7 +50,7 @@
                 <div class="dayEntry">
                     <p class="entryTitle">Minecraft build battle</p>
                     <p class="entryDesc"><code>mc.phoenixlan.no</code></p>
-                    <p class="entryTime">Fra lørdag 1d:00</p>
+                    <p class="entryTime">Fra lørdag 13:00</p>
                 </div>
                 <div class="dayEntry">
                     <p class="entryTitle">Phoenix datasnok</p>
