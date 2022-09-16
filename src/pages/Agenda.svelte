@@ -8,24 +8,42 @@
 	const APP_PROTOCOL = __myapp.env.APP_PROTOCOL
     console.log(__myapp.env)
     
+    const day_names = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"]
+    
     const fetchAgenda = (async () => {
         const agenda = await (await fetch(`${API_URL}/agenda`)).json()
-        return agenda
+        const agenda_days = []
+
+        agenda.forEach(entry => {
+            const date = new Date(entry.time*1000);
+            console.log(date)
+            const entry_day = date.getDay()
+
+            let dayEntry = agenda_days.find(day => {
+                return day.dayNo === entry_day
+            })
+            if(!dayEntry) {
+                dayEntry = {
+                    dayNo: entry_day,
+                    name: day_names[entry_day],
+                    sort_key: entry.time,
+                    agenda: []
+                }
+                agenda_days.push(dayEntry)
+            }
+            dayEntry.agenda.push(entry)
+        })
+        console.log(agenda_days)
+        return agenda_days
     })()
 </script>
 
 <div class="contentSimulator">
     <PageHeader><h1>Agenda</h1></PageHeader>
     <div class="content">
-        <!-- 
         {#await fetchAgenda}
         <i>Henter agenda</i>
         {:then data}
-        <b>Agenda er ikke implementert enda</b>
-        {:catch error}
-        <b>Kunne ikke hente data</b>
-        {/await}
-        -->
         <div class="calendarContainer">
             <div class="day">
                 <div class="dayTitle">Hele arrangementet</div>
@@ -37,9 +55,23 @@
                 <div class="dayEntry">
                     <p class="entryTitle">Phoenix datasnok</p>
                     <p class="entryDesc">Tech-konkurranse: <code>datasnok.phoenixlan.no</code></p>
-                    <p class="entryTime">Fra lørdag 20:00</p>
+                    <p class="entryTime">Fra lørdag 15:00</p>
                 </div>
             </div>
+            {#each data as day}
+            <div class="day">
+                <div class="dayTitle">{day.name}</div>
+                {#each day.agenda as entry}
+                <div class="dayEntry">
+                    <p class="entryTitle">{ entry.title }</p>
+                    {#if entry.description}
+                    <p class="entryDesc">{ entry.description}</p>
+                    {/if}
+                    <p class="entryTime">{ new Date(entry.time).toLocaleTimeString() }</p>
+                </div>
+                {/each}
+            </div>
+            {/each}
             <!--
             <div class="day">
                 <div class="dayTitle">Fredag</div>
@@ -101,6 +133,9 @@
             </div>
 -->
         </div>
+        {:catch error}
+        <b>Kunne ikke hente data: {error}</b>
+        {/await}
     </div>
 </div>
 
