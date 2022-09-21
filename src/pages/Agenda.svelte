@@ -8,7 +8,7 @@
 	const APP_PROTOCOL = __myapp.env.APP_PROTOCOL
     console.log(__myapp.env)
     
-    const day_names = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"]
+    const day_names = ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"]
     
     const fetchAgenda = (async () => {
         const agenda = await (await fetch(`${API_URL}/agenda`)).json()
@@ -18,6 +18,7 @@
             const date = new Date(entry.time*1000);
             console.log(date)
             const entry_day = date.getDay()
+            console.log(entry_day)
 
             let dayEntry = agenda_days.find(day => {
                 return day.dayNo === entry_day
@@ -27,6 +28,7 @@
                     dayNo: entry_day,
                     name: day_names[entry_day],
                     sort_key: entry.time,
+                    dateStr: `${date.toLocaleString('default', { day: "numeric", month: 'short' })}`,
                     agenda: []
                 }
                 agenda_days.push(dayEntry)
@@ -60,14 +62,18 @@
             </div>
             {#each data as day}
             <div class="day">
-                <div class="dayTitle">{day.name}</div>
+                <div class="dayTitle">
+                    <div class="dayTitleInner">
+                        {day.name}<i class="dayTitleDate">{day.dateStr}</i>
+                    </div>
+                </div>
                 {#each day.agenda as entry}
                 <div class="dayEntry">
                     <p class="entryTitle">{ entry.title }</p>
                     {#if entry.description}
                     <p class="entryDesc">{ entry.description}</p>
                     {/if}
-                    <p class="entryTime">{ new Date(entry.time).toLocaleTimeString() }</p>
+                    <p class="entryTime">{ new Date(entry.time*1000).toLocaleTimeString() }</p>
                 </div>
                 {/each}
             </div>
@@ -160,6 +166,10 @@
 
     font-size: 1.5em;
     padding: 0.4em;
+}
+.dayTitleDate {
+    margin-left: 0.2em;
+    font-size: 0.7em;
 }
 
 .dayEntry {
