@@ -48,6 +48,9 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	const getMinTicketPrice = (ticket_types) => {
 		let lowest = Number.MAX_SAFE_INTEGER
 		ticket_types.forEach((type) => {
+			if(!type.seatable) {
+				return
+			}
 			if(type.price < lowest) {
 				lowest = type.price
 			}
