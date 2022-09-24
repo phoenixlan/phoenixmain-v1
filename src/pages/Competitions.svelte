@@ -46,7 +46,7 @@ import PageHeader from "../components/PageHeader.svelte";
                 <li>300kr + billett til neste LAN</li>
                 <li>200kr + billett til neste LAN</li>
             </ol>  
-            <h2>Paint:</H2>
+            <h2>Paint:</h2>
             <p>Ønsker du å tegne mellom matches? Lag et fint bilde gjennom LANet, og send til oss! En jury fra Phoenix Crew vil gå gjennom alle innslagene og gi vurderinger. Konkurransen starter så snart vi åpner, og du kan bygge frem til søn. Kl 11.</p>
             <h5>Premier:</h5>
             <ol type="1">
@@ -57,7 +57,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <h2>Mange småkonkurranser</h2>
             <p>I løpet av LANet vil det arrangeres tilfeldige småkonkurranser du kan delta på for å få et avbrekk fra dine vanlige spill. Noen vil være fysiske, andre vil være digitale.</p>
             <h3>Beatsaber:</h3>
-            <p>LAN’et har endelig VR! Den som greier høyeste high score i Beatsaber gjennom LANet får muligheten til å vinne premie. En bra mulighet til å teste spennende ny form for gaming uten å straffe lommeboka for alle som vil!</p>
+            <p>LANet har endelig VR! Den som greier høyeste high score i Beatsaber gjennom LANet får muligheten til å vinne premie. En bra mulighet til å teste spennende ny form for gaming uten å straffe lommeboka for alle som vil!</p>
             <h5>Premier:</h5>
                 <ol type="1">
                     <li>400kr + Godt&amp;Blanda 700g</li>
@@ -65,7 +65,7 @@ import PageHeader from "../components/PageHeader.svelte";
                     <li>100kr + Godt&amp;Blanda 700g</li>
                 </ol>  
             <h3>Rocket League 1v1:</h3>
-            Gå inn i duel en mot en, der det er første man til å nå 3 mål. Best av 3 runder. Turneringen vil bli hostet via challengermode, så konto der er påkrevd. Compoen har 8 plasser tilgjengelig, førstemann!</p>
+            <p>Gå inn i duel en mot en, der det er første man til å nå 3 mål. Best av 3 runder. Turneringen vil bli hostet via challengermode, så konto der er påkrevd. Compoen har 8 plasser tilgjengelig, førstemann!</p>
             <h5>Premier:</h5>
             <ol type="1">
                 <li>400kr + Godt&amp;Blanda 700g</li>
