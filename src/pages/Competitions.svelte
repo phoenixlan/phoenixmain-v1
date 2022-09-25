@@ -12,7 +12,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <p>Wingman mode i CS består av runder der spillere møtes 2v2 i duell. Totalt 16 runder pr match. 4 lag totalt kan melde seg på. Påmelding gjøres via <a href="https://forms.gle/PsJKoVeYmdkw4zno8" target="_blank">Google Forms</a> (<b>OBS:</b> Husk lagnavn!). Turneringen vil bli hostet via <a href="https://www.challengermode.com" target="_blank">Challengermode</a>, så konto der er påkrevd og kobling mot Steam er påkrevd. Lag kaptein må opprette team.</p>
             <p><b>OBS:</b> Offentlige spilldetaljer på din Steam konto er påkrevd.(Ta kontakt i <a href="https://discord.com/channels/1005840391326670969/1005846792186892408" target="_blank">compo kanalen</a> vår om du har spørsmål)</p>
             <h5>Premier:</h5>
-            <ol type="1">
+            <ol type="1" class="center">
                 <li>700kr + billett til neste LAN</li>
                 <li>300kr + billett til neste LAN</li>
                 <li>200kr + billett til neste LAN</li>
@@ -25,7 +25,7 @@ import PageHeader from "../components/PageHeader.svelte";
                 <li>1 win: 3pts</li>
             </ul>
             <h5>Premier:</h5>
-            <ol type="1">
+            <ol type="1" class="center">
                 <li>700kr + billett til neste LAN</li>
                 <li>300kr + billett til neste LAN</li>
                 <li>200kr + billett til neste LAN</li>
@@ -33,7 +33,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <h2>Phoenix Datasnok</h2>
             <p>Er <b>DU</b> god på data? Vis dine ferdigheter ved å delta på Datasnok, en "hacke-rebus" du vinner ved å løse oppgaver av forskjellig vanskelighetsgrad.</p>
 			<h5>Premier:</h5>
-            <ol type="1">
+            <ol type="1" class="center">
                 <li>700kr + billett til neste LAN</li>
                 <li>300kr + billett til neste LAN</li>
                 <li>200kr + billett til neste LAN</li>
@@ -41,7 +41,7 @@ import PageHeader from "../components/PageHeader.svelte";
 			<h2>Minecraft Build Battle</h2>
             <p>Er du mer interessert i bygging enn deathmatch? Bygg i det frie gjennom LANet, og få sjansen til å vinne premie! En jury fra Phoenix Crew vil gå gjennom alle innslagene og gi vurderinger. Konkurransen starter så snart vi åpner, og du kan bygge frem til søn. Kl 11. Påmelding gjøres via <a href="https://forms.gle/mGji9FtfsF8a2VQQ6" target="_blank">Google Forms</a>!</p>
             <h5>Premier:</h5>
-            <ol type="1">
+            <ol type="1" class="center">
                 <li>700kr + billett til neste LAN</li>
                 <li>300kr + billett til neste LAN</li>
                 <li>200kr + billett til neste LAN</li>
@@ -49,7 +49,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <h2>Paint:</h2>
             <p>Ønsker du å tegne mellom matches? Lag et fint bilde gjennom LANet, og send til oss! En jury fra Phoenix Crew vil gå gjennom alle innslagene og gi vurderinger. Konkurransen starter så snart vi åpner, og du kan bygge frem til søn. Kl 11.</p>
             <h5>Premier:</h5>
-            <ol type="1">
+            <ol type="1" class="center">
                 <li>600kr + billett til neste LAN</li>
                 <li>300kr + billett til neste LAN</li>
                 <li>200kr + billett til neste LAN</li>
@@ -59,7 +59,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <h3>Beatsaber:</h3>
             <p>LANet har endelig VR! Den som greier høyeste high score i Beatsaber gjennom LANet får muligheten til å vinne premie. En bra mulighet til å teste spennende ny form for gaming uten å straffe lommeboka for alle som vil!</p>
             <h5>Premier:</h5>
-            <ol type="1">
+            <ol type="1" class="center">
                 <li>400kr + Godt&amp;Blanda 700g</li>
                 <li>200kr + Godt&amp;Blanda 700g</li>
                 <li>100kr + Godt&amp;Blanda 700g</li>
@@ -67,7 +67,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <h3>Rocket League 1v1:</h3>
             <p>Gå inn i duel en mot en, der det er første man til å nå 3 mål. Best av 3 runder. Turneringen vil bli hostet via challengermode, så konto der er påkrevd. Compoen har 8 plasser tilgjengelig, førstemann! Påmelding gjøres via <a href="https://forms.gle/AKZULvGJjnLnarKa6" target="_blank">Google Forms</a>!</p>
             <h5>Premier:</h5>
-            <ol type="1">
+            <ol type="1" class="center">
                 <li>400kr + Godt&amp;Blanda 700g</li>
                 <li>200kr + Godt&amp;Blanda 700g</li>
                 <li>100kr + Godt&amp;Blanda 700g</li>
@@ -84,5 +84,9 @@ p {
     background-color: #111111;
     display: flex;
     justify-content: center;
+}
+.center {
+  text-align: center;
+  list-style-position: inside;
 }
 </style>
