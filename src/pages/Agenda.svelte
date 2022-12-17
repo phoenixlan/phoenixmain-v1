@@ -1,5 +1,5 @@
 <script>
-    import SvelteMarkdown from 'svelte-markdown'
+    import { Moon } from 'svelte-loading-spinners';
 
     import PageHeader from '../components/PageHeader.svelte';
 
@@ -41,104 +41,50 @@
 </script>
 
 <div class="contentSimulator">
-    <PageHeader><h1>Agenda</h1></PageHeader>
+    <PageHeader><h1>Tidsskjema</h1></PageHeader>
     <div class="content">
         {#await fetchAgenda}
-        <i>Henter agenda</i>
+        <div class="loadingContainer">
+            <Moon color="#FF4B9D"/>
+        </div>
         {:then data}
-        <div class="calendarContainer">
-            <div class="day">
-                <div class="dayTitle">Hele arrangementet</div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Minecraft build battle</p>
-                    <p class="entryDesc"><code>mc.phoenixlan.no</code></p>
-                    <p class="entryTime">Fra lørdag 13:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Phoenix datasnok</p>
-                    <p class="entryDesc">Tech-konkurranse: <code>datasnok.phoenixlan.no</code></p>
-                    <p class="entryTime">Fra lørdag 15:00</p>
-                </div>
-            </div>
-            {#each data as day}
-            <div class="day">
-                <div class="dayTitle">
-                    <div class="dayTitleInner">
-                        {day.name}<i class="dayTitleDate">{day.dateStr}</i>
+        {#if data.length == 0}
+            <h1>Tidsskjema for kommende arrangement har ikke blitt sluppet enda</h1>
+        {:else}
+            <div class="calendarContainer">
+                <div class="day">
+                    <div class="dayTitle">Hele arrangementet</div>
+                    <div class="dayEntry">
+                        <p class="entryTitle">Minecraft build battle</p>
+                        <p class="entryDesc"><code>mc.phoenixlan.no</code></p>
+                        <p class="entryTime">Fra lørdag 13:00</p>
+                    </div>
+                    <div class="dayEntry">
+                        <p class="entryTitle">Phoenix datasnok</p>
+                        <p class="entryDesc">Tech-konkurranse: <code>datasnok.phoenixlan.no</code></p>
+                        <p class="entryTime">Fra lørdag 15:00</p>
                     </div>
                 </div>
-                {#each day.agenda as entry}
-                <div class="dayEntry">
-                    <p class="entryTitle">{ entry.title }</p>
-                    {#if entry.description}
-                    <p class="entryDesc">{ entry.description}</p>
-                    {/if}
-                    <p class="entryTime">{ new Date(entry.time*1000).toLocaleTimeString() }</p>
+                {#each data as day}
+                <div class="day">
+                    <div class="dayTitle">
+                        <div class="dayTitleInner">
+                            {day.name}<i class="dayTitleDate">{day.dateStr}</i>
+                        </div>
+                    </div>
+                    {#each day.agenda as entry}
+                    <div class="dayEntry">
+                        <p class="entryTitle">{ entry.title }</p>
+                        {#if entry.description}
+                        <p class="entryDesc">{ entry.description}</p>
+                        {/if}
+                        <p class="entryTime">{ new Date(entry.time*1000).toLocaleTimeString() }</p>
+                    </div>
+                    {/each}
                 </div>
                 {/each}
             </div>
-            {/each}
-            <!--
-            <div class="day">
-                <div class="dayTitle">Fredag</div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Kahoot</p>
-                    <p class="entryTime">18:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Skribble</p>
-                    <p class="entryTime">19:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Minecraft: Hunger games</p>
-                    <p class="entryTime">20:30 - 0:30</p>
-                </div>
-            </div>
-            <div class="day">
-                <div class="dayTitle">Lørdag</div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Rocket League 2v2</p>
-                    <p class="entryTime">13:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Kahoot</p>
-                    <p class="entryTime">17:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">CS:GO</p>
-                    <p class="entryTime">18:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Paint-compo</p>
-                    <p class="entryTime">23:00</p>
-                </div>
-            </div>
-            <div class="day">
-                <div class="dayTitle">Søndag</div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Paint-compo</p>
-                    <p class="entryTime">01:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Jackbox</p>
-                    <p class="entryTime">02:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">League of Legends 1v1</p>
-                    <p class="entryTime">15:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Jackbox</p>
-                    <p class="entryTime">17:00</p>
-                </div>
-                <div class="dayEntry">
-                    <p class="entryTitle">Premieutdeling</p>
-                    <p class="entryDesc">Build battle og datasnok</p>
-                    <p class="entryTime">17:45</p>
-                </div>
-            </div>
--->
-        </div>
+        {/if}
         {:catch error}
         <b>Kunne ikke hente data: {error}</b>
         {/await}
@@ -146,6 +92,16 @@
 </div>
 
 <style>
+
+.loadingContainer {
+    width: 100%;
+    
+    padding-top: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .calendarContainer {
     width: 100%;

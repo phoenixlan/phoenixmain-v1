@@ -183,7 +183,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
             </Link>
             <Link to="/agenda">
                 <div class="article_link_container">
-                    <h2>Agenda</h2>
+                    <h2>Tidsskjema</h2>
                     <div class="article-icon">
                     <Fa icon={faCalendarAlt} />
                     </div>

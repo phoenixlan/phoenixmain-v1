@@ -1,8 +1,9 @@
 <script>
     import SvelteMarkdown from 'svelte-markdown'
-import { Link } from 'svelte-routing';
+    import { Moon } from 'svelte-loading-spinners';
+    import { Link } from 'svelte-routing';
 
-import PageHeader from '../components/PageHeader.svelte';
+    import PageHeader from '../components/PageHeader.svelte';
 
     const API_URL = __myapp.env.API_URL
 	const APP_HOST = __myapp.env.APP_HOST
@@ -19,7 +20,7 @@ import PageHeader from '../components/PageHeader.svelte';
     <div class="content">
         <p>Du kan også lese våre salgsbetingelser<Link to="/salgsbetingelser">her</Link></p>
         {#await fetchArticle}
-        <i>Henter regler</i>
+            <Moon color="#FF4B9D"/>
         {:then data}
         <div class="rules">
             <SvelteMarkdown source={ data } />

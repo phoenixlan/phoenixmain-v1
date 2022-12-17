@@ -1,8 +1,9 @@
 <script>
     import SvelteMarkdown from 'svelte-markdown'
+    import { Moon } from 'svelte-loading-spinners';
 
     import Logo from '../components/Logo.svelte';
-import PageHeader from '../components/PageHeader.svelte';
+    import PageHeader from '../components/PageHeader.svelte';
 
     const API_URL = __myapp.env.API_URL
 	const APP_HOST = __myapp.env.APP_HOST
@@ -18,7 +19,9 @@ import PageHeader from '../components/PageHeader.svelte';
     <PageHeader><h1>Salgsbetingelser</h1></PageHeader>
     <div class="content">
         {#await fetchArticle}
-        <i>Henter kjøpsvilkår</i>
+        <div class="loadingContainer">
+            <Moon color="#FF4B9D"/>
+        </div>
         {:then data}
         <div class="rules">
             <SvelteMarkdown source={ data } />
@@ -30,6 +33,11 @@ import PageHeader from '../components/PageHeader.svelte';
 </div>
 
 <style>
+
+.loadingContainer {
+    padding-top: 2em;
+}
+
 .content {
     background-color: #111111;
     display: flex;

@@ -674,6 +674,11 @@ svelte-fa@^2.2.0:
   resolved "https://registry.yarnpkg.com/svelte-fa/-/svelte-fa-2.2.0.tgz#2b2282ee83e550ab29317a1955bdef53321e9110"
   integrity sha512-PN1H8AWDh+OwhwjJKTv4/zXvKvmvOEVSCVhIhji6Onx8XEw+CGf8BDR0BVUIp87IEX+DEqIo9pbyhgz8EoYZyA==
 
+svelte-loading-spinners@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/svelte-loading-spinners/-/svelte-loading-spinners-0.3.4.tgz#af11d0f9ef0943026415c931900c10fea02a88a5"
+  integrity sha512-vKaW71QMCBcTNijAGc0mUl8k3DQ66iYmp6MB8BMGCXyWk82bTrcLy8FOnSm9fE+8q6TwzD6PLUoYFHt0II93Xw==
+
 svelte-markdown@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/svelte-markdown/-/svelte-markdown-0.1.8.tgz#bd1b7f712de16a51a9afa0f1fd6f8a317a32ad86"
