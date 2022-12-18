@@ -71,6 +71,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
+		timeZone: "Europe/Oslo"
     }
 </script>
 
