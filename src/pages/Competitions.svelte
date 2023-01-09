@@ -9,8 +9,9 @@ import PageHeader from "../components/PageHeader.svelte";
     <div class="content">
         <div class="content-inner">
             <p>Flere konkurranser vil bli lansert senere</p>
-            <h2>CS:GO</h2>
+            <h2>Valorant 3v3</h2>
             <p><i>Mer informasjon kommer senere</i></p>
+            <p><i>Vi erstatter dette LANet CS:GO med valorant</i></p>
             <h2>Minecraft Battle Royale</h2>
             <p><i>Mer informasjon kommer senere</i></p>
             <h2>Phoenix Datasnok</h2>
