@@ -23,6 +23,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <p><i>Mer informasjon kommer senere</i></p>
             <h2>Mange småkonkurranser</h2>
             <p>I løpet av LANet vil det arrangeres tilfeldige småkonkurranser du kan delta på for å få et avbrekk fra dine vanlige spill. Noen vil være fysiske, andre vil være digitale.</p>
+            <p>Er det konkurranser du savner? Si ifra til oss på Discord, eller søk Game crew og bli med på å arrangere det selv!</p>
         </div>
     </div>
 </div>
