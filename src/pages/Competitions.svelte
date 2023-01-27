@@ -17,7 +17,6 @@ import PageHeader from "../components/PageHeader.svelte";
                 <li>No draws</li>
                 <li>Up to 13 wins and/or 26 rounds(30-45 min)</li>
             </ul>
-            <p><i>Vi erstatter dette LANet CS:GO med valorant</i></p>
             <h2>Minecraft Battle Royale</h2>
             <p><a href="https://forms.gle/JDjkPyEUYCfKR4bP6">Påmelding</a></p>
             <p>Alle mot alle, Hunger Games style. Tre runder vil kjøres totalt. Total poengsum fra de tre rundene vil bestemme vinner, så lurt å slenge seg med på alt!</p>
