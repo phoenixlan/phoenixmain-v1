@@ -8,22 +8,37 @@ import PageHeader from "../components/PageHeader.svelte";
     <PageHeader><h1>Konkurranser</h1></PageHeader>
     <div class="content">
         <div class="content-inner">
-            <p>Flere konkurranser vil bli lansert senere</p>
+            <p>Er det konkurranser du savner? Si ifra til oss på Discord, eller søk Game crew og bli med på å arrangere det selv!</p>
             <h2>Valorant</h2>
-            <p><i>Mer informasjon kommer senere</i></p>
+            <p><a href="https://forms.gle/1UnhLSgG8KQu66Wt5">Påmelding(Lagledere)</a></p>
+            <p><a href="https://forms.gle/krmoYmDxkvsSwvdt8">Påmelding(Lagmedlem)</a></p>
+            <ul>
+                <li>Standard with OT</li>
+                <li>No draws</li>
+                <li>Up to 13 wins and/or 26 rounds(30-45 min)</li>
+            </ul>
             <p><i>Vi erstatter dette LANet CS:GO med valorant</i></p>
             <h2>Minecraft Battle Royale</h2>
-            <p><i>Mer informasjon kommer senere</i></p>
+            <p><a href="https://forms.gle/JDjkPyEUYCfKR4bP6">Påmelding</a></p>
+            <p>Alle mot alle, Hunger Games style. Tre runder vil kjøres totalt. Total poengsum fra de tre rundene vil bestemme vinner, så lurt å slenge seg med på alt!</p>
             <h2>Phoenix Datasnok</h2>
+            <p><b>Påmelding skjer via konkurransesystemet på LANet</b></p>
             <p>Er <b>DU</b> god på data? Vis dine ferdigheter ved å delta på Datasnok, en "hacke-rebus" du vinner ved å løse oppgaver av forskjellig vanskelighetsgrad.</p>
-            <p><i>Mer informasjon kommer senere</i></p>
+            <ul>
+                <li>Ingen teaming</li>
+                <li>Flest poeng vinner</li>
+                <li>Førstemann som fikk poengsummen blir valgt dersom det blir likt</li>
+            </ul>
+            <p><a href="https://datasnok.phoenixlan.no">datasnok.phoenixlan.no</a></p>
 			<h2>Minecraft Build Battle</h2>
-            <p><i>Mer informasjon kommer senere</i></p>
+            <p><a href="https://forms.gle/MPNisMkfpZahe9379">Påmelding</a></p>
+            <p>Er du mer interessert i bygging enn deathmatch?  Bygg i det frie gjennom LANet, og få sjansen til å vinne premie! En jury fra Phoenix Crew vil gå gjennom alle innslagene og gi vurderinger. Konkurransen starter så snart vi åpner, og du kan bygge frem til søn. Kl 11. </p>
             <h2>Beatsaber:</h2>
-            <p><i>Mer informasjon kommer senere</i></p>
-            <h2>Mange småkonkurranser</h2>
-            <p>I løpet av LANet vil det arrangeres tilfeldige småkonkurranser du kan delta på for å få et avbrekk fra dine vanlige spill. Noen vil være fysiske, andre vil være digitale.</p>
-            <p>Er det konkurranser du savner? Si ifra til oss på Discord, eller søk Game crew og bli med på å arrangere det selv!</p>
+            <p>LAN’et har endelig VR! Den som greier høyeste high score i Beatsaber gjennom LANet får muligheten til å vinne premie. En bra mulighet til å teste spennende ny form for gaming uten å straffe lommeboka for alle som vil!</p>
+            <h2>Småkonkurranser</h2>
+            <h3>Paint</h3>
+            <p><a href="https://forms.gle/utfwW9sPs1yiA22R7">Påmelding</a></p>
+            <p>Ønsker du å tegne mellom matches? Lag et fint bilde gjennom LANet, og send til oss! En jury fra Phoenix Crew vil gå gjennom alle innslagene og gi vurderinger. Konkurransen starter så snart vi åpner, og du kan bygge frem til søn. Kl 11.</p>
         </div>
     </div>
 </div>
