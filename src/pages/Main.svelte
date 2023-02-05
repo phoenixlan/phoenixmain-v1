@@ -19,6 +19,14 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	import { faEthernet } from '@fortawesome/free-solid-svg-icons';
 	import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 	import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+	import { faSnowflake } from '@fortawesome/free-solid-svg-icons'
+	import { faLeaf } from '@fortawesome/free-solid-svg-icons'
+	import { faComputer } from '@fortawesome/free-solid-svg-icons'
+	import { faGamepad } from '@fortawesome/free-solid-svg-icons'
+	import { faAward } from '@fortawesome/free-solid-svg-icons'
+	import { faVrCardboard } from '@fortawesome/free-solid-svg-icons'
+	import { faUserPlus } from '@fortawesome/free-solid-svg-icons'
+	import { faMicrochip } from '@fortawesome/free-solid-svg-icons'
 	import Background from '../components/Background.svelte';
 
 	import Logo from '../components/Logo.svelte';
@@ -112,10 +120,56 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	</div>
 	<div class="explanation">
 		<h2>Om arrangementet</h2>
+		<div class="editions">
+			<div class="edition">
+				<Fa class="edition-icon" icon={faSnowflake} />
+				<h3>Vinterferie</h3>
+				<p>1 natt(Lørdag til Søndag)<br />Første helgen</p>
+				<p>Aldersgrense til og med 20 år<br /><i>(25 for crew)</i></p>
+			</div>
+			<div class="edition">
+				<Fa class="edition-icon" icon={faLeaf} />
+				<h3>Høstferie</h3>
+				<p>2 netter(Fredag til Søndag)<br />Første helgen</p>
+				<p>Aldersgrense til og med 25 år</p>
+			</div>
+		</div>
+
+		<h2>Hva kan jeg gjøre på Phoenix LAN</h2>
+		<div class="editions">
+			<div class="edition">
+				<Fa class="edition-icon" icon={faVrCardboard} />
+				<h3>Spille VR</h3>
+				<p>Phoenix stiller med flere VR-stasjoner der du kan prøve VR-spill</p>
+			</div>
+			<div class="edition">
+				<Fa class="edition-icon" icon={faComputer} />
+				<h3>Spille på medbragt PC/konsoll</h3>
+				<p>Hver deltaker får en sitteplass med internett(gigabit ethernet) og strøm</p>
+			</div>
+			<div class="edition">
+				<Fa class="edition-icon" icon={faGamepad} />
+				<h3>Spille på arkademaskiner</h3>
+				<p>Vi stiller med flere fysiske arkademaskiner, både retro og moderne</p>
+			</div>
+			<div class="edition">
+				<Fa class="edition-icon" icon={faAward} />
+				<h3>Konkurrere om premier</h3>
+				<p>Vi har en premiepott på over 10k. Hvor mye av den klarer du å vinne?</p>
+			</div>
+			<div class="edition">
+				<Fa class="edition-icon" icon={faUserPlus} />
+				<h3>Møte nye lagkamerater</h3>
+				<p>Phoenix LAN er en av de beste stedene å gå i vinterferien og høstferien for å møte likesinnede i Asker og Bærum.</p>
+			</div>
+			<div class="edition">
+				<Fa class="edition-icon" icon={faMicrochip} />
+				<h3>Lære om tech</h3>
+				<p>Vi tilbyr mange måter å lære mer om teknologi med oss, blandt annet ved hjelp av vår egen CTF.</p>
+			</div>
+		</div>
 
 		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med. I tillegg til en sitteplass der du kan ta med en PC, vil vi ha aktiviteter som VR-stasjoner, konsoller, og arkademaskiner.</p>
-		<p>LANet arrangeres to ganger i året, første helg i vinterferien og høstferien. LANet i vinterferien varer en natt og har en øvre aldersgrense på 20 år. Høstlanet varer hele helgen, og har en øvre aldersgrense på 25. Aldersgrensen for de frivillige som arrangerer LANet er 25 begge arrangementer.</p>
-
 
 		<h2>Bli med på å arrangere moroa</h2>
 
@@ -206,6 +260,26 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 </main>
 
 <style>
+	.editions {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		margin: 3em 0 3em 0;
+	}
+
+	.edition {
+		margin: 0 2em 0 2em;
+		width: 20em;
+	}
+	
+	:global(.edition > svg) {
+		font-size: 3em;
+		margin: 1em;
+		color: #f451a0;
+	}
+
+
 	@font-face {
 		font-family: noContinue;
 		src: url("/fonts/gomarice_no_continue.ttf");
