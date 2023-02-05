@@ -135,7 +135,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 			</div>
 		</div>
 
-		<h2>Hva kan jeg gjøre på Phoenix LAN</h2>
+		<h2>Hva kan jeg gjøre på Phoenix LAN?</h2>
 		<div class="editions">
 			<div class="edition">
 				<Fa class="edition-icon" icon={faVrCardboard} />
