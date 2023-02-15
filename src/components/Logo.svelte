@@ -8,7 +8,7 @@
 
 <style>
     img {
-        width: 40em;
+        width: 35em;
         max-width: 90%;
     }
 </style>

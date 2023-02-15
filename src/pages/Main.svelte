@@ -9,16 +9,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 -->
 <script>
     import Fa from 'svelte-fa'
-    
-    import { Link } from "svelte-routing";
 
-	import { faChild } from '@fortawesome/free-solid-svg-icons'
-	import { faShieldAlt } from '@fortawesome/free-solid-svg-icons'
-	import { faList } from '@fortawesome/free-solid-svg-icons'
-	import { faTrophy } from '@fortawesome/free-solid-svg-icons'
-	import { faEthernet } from '@fortawesome/free-solid-svg-icons';
-	import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-	import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 	import { faSnowflake } from '@fortawesome/free-solid-svg-icons'
 	import { faLeaf } from '@fortawesome/free-solid-svg-icons'
 	import { faComputer } from '@fortawesome/free-solid-svg-icons'
@@ -89,7 +80,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		<div class="splash">
 			<div class="splash-inner">
 				<Logo />
-				<h2 class="lanTitle">Et nytt LAN-konsept fra Radar Event</h2>
+				<h2 class="lanTitle">Gaming og Digital kultur i Asker Kulturhus</h2>
 				{#await fetchMetadata}
 				{:then data}
 				<div class="button_container ticket_button_container">
@@ -102,14 +93,19 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 				<div class="ticketDetail">
 					<h3>{new Date(data.event.start_time*1000).toLocaleString('no-NO', localeFormatSettings)} til {new Date(data.event.end_time*1000).toLocaleString('no-NO', localeFormatSettings)}{(data.event.location?.name) ? (" I " + data.event.location.name) : ""}</h3>
 					{#if data.event.booking_time < new Date().getTime()/1000}
-					<h3>{data.ticket_availability.total} billetter igjen</h3>
+					<h3>
+						{data.ticket_availability.total} billetter igjen.
+						{#if data.ticket_types.length > 0}
+							Fra {getMinTicketPrice(data.ticket_types)},-
+						{/if}
+					</h3>
 					{:else}
 					<h3>
-						Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}
+						Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}.
+						{#if data.ticket_types.length > 0}
+							Fra {getMinTicketPrice(data.ticket_types)},-
+						{/if}
 					</h3>
-					{/if}
-					{#if data.ticket_types.length > 0}
-						<h3>Fra {getMinTicketPrice(data.ticket_types)},- </h3>
 					{/if}
 				</div>
 				{:catch error}
@@ -145,7 +141,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 			<div class="edition">
 				<Fa class="edition-icon" icon={faComputer} />
 				<h3>Spille på medbragt PC/konsoll</h3>
-				<p>Hver deltaker får en sitteplass med internett(gigabit ethernet) og strøm</p>
+				<p>Hver deltaker får en sitteplass med internett(gigabit ethernet) og strøm. WiFi er ikke garantert, da det ikke er egnet for gaming</p>
 			</div>
 			<div class="edition">
 				<Fa class="edition-icon" icon={faGamepad} />
@@ -186,63 +182,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		</div>
 
 		<div class="button_container">
-            <Link to="/foreldre">
-                <div class="article_link_container">
-                    <h2>Forelder?</h2>
-                    <p>Nervøs for å sende barnet ditt på sitt første LAN? Nysgjerrig på hva et LAN er?</p>
-                    <div class="article-icon">
-                      <Fa icon={faChild} />
-                    </div>
-                </div>
-            </Link>
-            <Link to="/hvaErEtLan">
-                <div class="article_link_container">
-                    <h2>Hva er et LAN?</h2>
-                    <div class="article-icon">
-                    <Fa icon={faEthernet} />
-                    </div>
-                </div>
-            </Link>
-            <Link to="/regler">
-                <div class="article_link_container">
-                    <h2>Regler og sikkerhet</h2>
-                    <div class="article-icon">
-                    <Fa icon={faShieldAlt} />
-                    </div>
-                </div>
-            </Link>
-            <Link to="/konkurranser">
-                <div class="article_link_container">
-                    <h2>Konkurranser</h2>
-                    <div class="article-icon">
-                    <Fa icon={faTrophy} />
-                    </div>
-                </div>
-			</Link>
-			<Link to="/pakkeliste">
-                <div class="article_link_container">
-                    <h2>Pakkeliste</h2>
-                    <div class="article-icon">
-                    <Fa icon={faList} />
-                    </div>
-                </div>
-            </Link>
-			<Link to="/pa_phoenix">
-                <div class="article_link_container">
-                    <h2>På phoenix</h2>
-                    <div class="article-icon">
-                    <Fa icon={faMapMarkerAlt} />
-                    </div>
-                </div>
-            </Link>
-            <Link to="/agenda">
-                <div class="article_link_container">
-                    <h2>Tidsskjema</h2>
-                    <div class="article-icon">
-                    <Fa icon={faCalendarAlt} />
-                    </div>
-                </div>
-            </Link>
         </div>
 		<h2>Sosialt</h2>
 		<p>Imellom arangementene kan du henge på vår discord-server. Her kan du holde kontakt med de du møtte under LANet, og stille spørsmål. Phoenix-miljøet er moderert, men det samme kan ikke sies om andre steder på Discord. Vi anbefaler derfor foreldre å passe på hva barn under 18 gjør på Discord, og hvilke miljøer de er med i.
@@ -260,6 +199,13 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 </main>
 
 <style>
+	.button_container > :global(a) {
+        user-select: none;
+
+        color: white;
+		text-decoration: none;
+	}
+
 	.editions {
 		display: flex;
 		justify-content: center;
@@ -313,7 +259,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 
 	.splash-background-sandwitch {
 		position: relative;
-		min-height: calc(100vh - 5em);
+		min-height: calc(100vh - 10em);
 	}
 
 	.splash {
@@ -325,7 +271,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 
 	.splash-inner {
 		z-index: 1;
-		margin: 4em 2em 0 2em;
+		margin: 2em 2em 0 2em;
 	}
 
 	.hack {
@@ -345,13 +291,12 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	.button_container :global(a) {
 		text-decoration: none;
 	}
-
 	.ticket_button_container :global(a) {
 		width: 100%;
 		max-width: 30em;
-
 		margin: 1em 0 1em 0;
 	}
+
 	.join_discord_btn {
 		color: white;
 		background-color: #f451a0;
@@ -392,19 +337,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		background-color: #C42180;
 	}
 
-	.article_link_container {
-		width: calc(100% - 4em);
-
-		padding: 2em;
-
-		background-color: #f451a0;
-		cursor: pointer;
-
-		display: flex;
-		flex-direction: column;
-        justify-content: space-around;
-	}
-	
 	@media only screen and (min-width: 600px) {
 		.article_link_container {
 			width: 30em;
@@ -412,7 +344,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 			margin: 2em;
 		}
 	}
-
 	@media only screen and (max-width: 600px) {
 		.button_container {
 			flex-direction: column;
@@ -421,15 +352,8 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		.button_container > :global(a) {
 			width: 100%;
 		}
-		.article_link_container {
-			width: calc(100% - 4rem);
-			margin: 2rem 0 2rem 0;
-		}
-		.article-icon {
-			display: none;
-		}
 	}
-    
+
     /*.button_container > a {
         color: red;
         text-decoration: none;

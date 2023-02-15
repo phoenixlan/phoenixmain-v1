@@ -2,6 +2,10 @@
     import Logo from '../components/Logo.svelte';
 import PageHeader from '../components/PageHeader.svelte';
 </script>
+
+<!--
+    PHOENIX{wH3r3_Ar3_YouR_pAr3n75_7HI5_KiD_5U2}
+-->
     
 <div class="contentSimulator">
     <PageHeader><h1>For foreldre</h1></PageHeader>

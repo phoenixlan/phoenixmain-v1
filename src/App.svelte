@@ -12,11 +12,14 @@
 	import PurchaseTos from './pages/PurchaseTos.svelte'
 	import WhatIsALan from './pages/WhatIsALan.svelte';
 
+	import Menu from './components/Menu.svelte';
+
 	import { faChild } from '@fortawesome/free-solid-svg-icons'
 	import { faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 	import { faList } from '@fortawesome/free-solid-svg-icons'
 	import { faTrophy } from '@fortawesome/free-solid-svg-icons'
 	import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+	import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 	import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 	import { faFacebook } from '@fortawesome/free-brands-svg-icons'
@@ -32,9 +35,20 @@
 		}
 	})
 
+	let menuOpen = false;
+
 </script>
 
 <Router url="{url}">
+	<header>
+		<div class="floatingHeader">
+			<div class="menuBtn" on:click={() => menuOpen = !menuOpen}>
+				<Fa class="edition-icon" icon={faBars} />
+				<span>Meny</span>
+			</div>
+			<Menu bind:open={menuOpen}/>
+		</div>
+	</header>
 	<main>
 		<Route path="pakkeliste" component="{Packing}" />
 		<Route path="regler" component="{Rules}" />
@@ -80,6 +94,36 @@
 	</footer>
 </Router>
 <style>
+	header {
+		height: 3em;
+	}
+
+	.floatingHeader {
+		color: white;
+		background-color: #f451a0;
+		width: 100%;
+		z-index: 100;
+		position: fixed;
+	}
+	.menuBtn {
+		font-size: 1.5em;
+		padding: 0.75em;
+
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+
+		cursor: pointer;
+
+		user-select: none;
+
+	}
+	.menuBtn:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	.menuBtn > span {
+		padding-left: 0.75em;
+	}
 	main {
 		/* height: 100%; */
 		text-align: center;
@@ -96,11 +140,6 @@
 		max-width: none;
 		margin: 0 auto;
 		color: white;
-	}
-
-	/* Refactor to child page at some point */
-	.contentSimulator {
-
 	}
 
 	.some-list {
