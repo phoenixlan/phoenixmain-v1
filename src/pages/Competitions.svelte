@@ -31,7 +31,7 @@ import PageHeader from "../components/PageHeader.svelte";
             <h2>Beatsaber:</h2>
             <p>Høyeste score på et sett med forhåndsbestemte sanger vinner. Du har hele LANet til å prøve deg.</p>
             <h2>Småkonkurranser</h2>
-            <p>I løpet av LANet arrangerer vi småkonkurranser i alt fra bordtennis til </p>
+            <p>I løpet av LANet arrangerer vi småkonkurranser i alt fra bordtennis til Kahoot og retro-arkademaskin</p>
         </div>
     </div>
 </div>
