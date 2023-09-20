@@ -119,9 +119,12 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		<div class="editions">
 			<div class="edition">
 				<Fa class="edition-icon" icon={faSnowflake} />
+				<s>
 				<h3>Vinterferie</h3>
 				<p>1 natt(Lørdag til Søndag)<br />Første helgen</p>
 				<p>Aldersgrense til og med 20 år<br /><i>(25 for crew)</i></p>
+				</s>
+				<p><b>NB: Ingen vinter-LAN i 2024 pga budsjettkutt i kommunen</b></p>
 			</div>
 			<div class="edition">
 				<Fa class="edition-icon" icon={faLeaf} />

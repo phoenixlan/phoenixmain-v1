@@ -26,7 +26,9 @@ import PageHeader from '../components/PageHeader.svelte';
             <p>Dersom barnet skal få lov til å gå ut av bygget i portforbud-tiden må vi ha kommunikasjon med foresatte. Dette gjelder også for crew-ungdom.</p>
 
             <h1>Hvordan foregår det?</h1>
-            <p>Arrangementet varer over to dager – fra lørdag kl. 13:00 kveld til søndag kl: 14.00, første helgen i høstferien og i vinterferien. Phoenix LAN er for ungdom – og av ungdom. Det vil si at det er i stor grad ungdommen selv som står for arrangementet, med planlegging, gjennomføring og opprydding. På denne måten blir arrangementet en sosial arena der unge mennesker kan bygge opp relasjoner og drive positivt arbeid. Vi oppfordrer ungdom til å melde seg inn i crew, og bidra til å utvikle og gjennomføre dette arrangementet.</p>
+            <p>Vinterferie-varianten av LANet varer over to dager – fra lørdag kl. 13:00 til søndag kl: 14.00. Høstverie-varianten varer fra fredag kl. 18:00 til søndag kl: 12:00</p>
+                
+            <p>Phoenix LAN er for ungdom – og av ungdom. Det vil si at det er i stor grad ungdommen selv som står for arrangementet, med planlegging, gjennomføring og opprydding. På denne måten blir arrangementet en sosial arena der unge mennesker kan bygge opp relasjoner og drive positivt arbeid. Vi oppfordrer ungdom til å melde seg inn i crew, og bidra til å utvikle og gjennomføre dette arrangementet.</p>
 
             <h1>Oppmøte</h1>
             <p>Når LAN-et starter sjekker alle deltakerne inn, får på adgangsbånd og finner plassen sin. Her plasserer de pc-en og sitter store deler av tiden. Ellers er Radar Ungdomskafe åpen, og områdene i kafeen er åpent for sosiale aktiviteter. Det er egen sovesal hvor deltakerne må ordre sin egen plass med sovepose og liggeunderlag eller lignende og deltakerne blir oppfordret til å sove underveis av vertskapet. Ellers foregår det spill konkurranser lokalt, og andre «events» og konkurranser på scenen.</p>
