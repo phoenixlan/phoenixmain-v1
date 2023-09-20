@@ -57,12 +57,12 @@
                     <div class="dayEntry">
                         <p class="entryTitle">Minecraft build battle</p>
                         <p class="entryDesc"><code>mc.phoenixlan.no</code></p>
-                        <p class="entryTime">Fra lørdag 13:00</p>
+                        <p class="entryTime">Fra fredag 19:00</p>
                     </div>
                     <div class="dayEntry">
                         <p class="entryTitle">Phoenix datasnok</p>
                         <p class="entryDesc">Tech-konkurranse: <code>datasnok.phoenixlan.no</code></p>
-                        <p class="entryTime">Fra lørdag 15:00</p>
+                        <p class="entryTime">Fra fredag 19:00</p>
                     </div>
                 </div>
                 {#each data as day}
