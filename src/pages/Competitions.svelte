@@ -15,8 +15,8 @@ import PageHeader from "../components/PageHeader.svelte";
                 <li>No draws</li>
                 <li>Up to 13 wins and/or 26 rounds(30-45 min)</li>
             </ul>
-            <h3> <ahref="https://forms.gle/tgExMg9vdZysHCKi8">Påmeldingskjema Lagleder </a></h3>
-            <h3> <ahref="https://forms.gle/2UvadeokqLfBTQYj6">Påmeldingskjema Lagkamerat </a></h3>
+            <h3> <a href="https://forms.gle/tgExMg9vdZysHCKi8">Påmeldingskjema Lagleder </a></h3>
+            <h3> <a href="https://forms.gle/2UvadeokqLfBTQYj6">Påmeldingskjema Lagkamerat </a></h3>
             <h2>Minecraft Battle Royale</h2>
             <p>Alle mot alle, Hunger Games style. Tre runder vil kjøres totalt. Total poengsum fra de tre rundene vil bestemme vinner, så lurt å slenge seg med på alt!</p>
             <h3> <ahref="https://forms.gle/T8WUzMx2XnLkXQJVA">Påmeldingskjema MC:Battle Royale </a></h3>
