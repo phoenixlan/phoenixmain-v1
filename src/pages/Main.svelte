@@ -102,9 +102,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 					{:else}
 					<h3>
 						Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}.
-						{#if data.ticket_types.length > 0}
-							Fra {getMinTicketPrice(data.ticket_types)},-
-						{/if}
 					</h3>
 					{/if}
 				</div>
