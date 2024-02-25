@@ -37,6 +37,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		])
 		
 
+		console.log(ticket_types)
 		return {
 			event: current_event,
 			ticket_types,
@@ -102,6 +103,9 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 					{:else}
 					<h3>
 						Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}.
+						{#if data.ticket_types.filter(ticket_type => ticket_type.seatable).length > 0}
+							Fra {getMinTicketPrice(data.ticket_types)},-
+						{/if}
 					</h3>
 					{/if}
 				</div>
