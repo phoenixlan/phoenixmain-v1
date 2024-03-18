@@ -1,4 +1,4 @@
-<!--
+-<!--
 __________.__                         .__        
 \______   \  |__   ____   ____   ____ |__|__  ___
  |     ___/  |  \ /  _ \_/ __ \ /    \|  \  \/  /
@@ -36,8 +36,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 			await (await fetch(`${API_URL}/event/${current_event.uuid}/ticket_availability`)).json(),
 		])
 		
-
-		console.log(ticket_types)
 		return {
 			event: current_event,
 			ticket_types,
