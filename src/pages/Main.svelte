@@ -36,7 +36,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 			await (await fetch(`${API_URL}/event/${current_event.uuid}/ticket_availability`)).json(),
 		])
 		
-
 		return {
 			event: current_event,
 			ticket_types,
@@ -102,7 +101,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 					{:else}
 					<h3>
 						Billetter slippes {new Date(data.event.booking_time*1000).toLocaleString('no-NO', localeFormatSettings)}.
-						{#if data.ticket_types.length > 0}
+						{#if data.ticket_types.filter(ticket_type => ticket_type.seatable).length > 0}
 							Fra {getMinTicketPrice(data.ticket_types)},-
 						{/if}
 					</h3>
