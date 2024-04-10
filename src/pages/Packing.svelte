@@ -10,7 +10,7 @@ const legal = [
     "Vann eller brus. Eventuelt lukkbar vannflaske.",
     "Eventuelle medisiner hvis man trenger det (Ta kontakt med crew hvis det er noe vi bør vite).",
     "Din billett",
-    "Sovepose.",
+    "Sovepos/dyne og liggeunderlag/luftmadrass",
     "Gyldig legitimasjon. (Pass, bankkort med bilde, førerkort). Studentkort er ikke gyldig legitimasjon."
 ];
 // TODO re-add foreldreattest later
