@@ -18,7 +18,7 @@
 <div class="contentSimulator">
     <PageHeader><h1>Regler og sikkerhet</h1></PageHeader>
     <div class="content">
-        <p>Du kan også lese våre salgsbetingelser<Link to="/salgsbetingelser">her</Link></p>
+        <p>Du kan også lese våre salgsbetingelser <Link to="/salgsbetingelser">her</Link></p>
         {#await fetchArticle}
             <Moon color="#FF4B9D"/>
         {:then data}
