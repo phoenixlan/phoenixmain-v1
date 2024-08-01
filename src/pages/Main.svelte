@@ -93,7 +93,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 					<h3>{new Date(data.event.start_time*1000).toLocaleString('no-NO', localeFormatSettings)} til {new Date(data.event.end_time*1000).toLocaleString('no-NO', localeFormatSettings)}{(data.event.location?.name) ? (" I " + data.event.location.name) : ""}</h3>
 					{#if data.event.booking_time < new Date().getTime()/1000}
 					<h3>
-						{data.ticket_availability.total} billetter igjen.
 						{#if data.ticket_types.length > 0}
 							Fra {getMinTicketPrice(data.ticket_types)},-
 						{/if}
