@@ -25,13 +25,13 @@ const illegal = [
     <PageHeader><h1>Pakkeliste</h1></PageHeader>
     <div class="content">
         <div class="content-inner">
-            <h1>Hva burde jeg ta med?</h1>
+            <h2>Hva burde jeg ta med?</h2>
             <ul>
                 {#each legal as item}
                     <li>{item}</li>
                 {/each}
             </ul>
-            <h1>Hva kan jeg <b>IKKE</b> ta med?</h1>
+            <h2>Hva kan jeg <b>IKKE</b> ta med?</h2>
             <ul>
                 {#each illegal as item}
                     <li>{item}</li>

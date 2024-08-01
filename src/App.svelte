@@ -23,6 +23,7 @@
 
 	import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 	import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+	import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 
 	export let url = "";
 
@@ -71,7 +72,9 @@
 			<a href="https://www.facebook.com/phoenixlan.no">
 					<Fa icon={faFacebook} />
 			</a>
-
+			<a href="https://www.tiktok.com/@phoenixlan.no">
+					<Fa icon={faTiktok} />
+			</a>
 		</div>
 		<h2>Samarbeidspartnere</h2>
 		<div class="sponsors">

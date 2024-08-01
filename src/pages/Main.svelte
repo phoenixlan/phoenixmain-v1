@@ -22,6 +22,30 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 
 	import Logo from '../components/Logo.svelte';
 
+	const images = [
+		{
+		src: "/photos/1_final.jpg",
+		alt: "Oversiktsbilde deltakere"
+		},
+		{
+		src: "/photos/2_final.jpg",
+		alt: "2 Deltakere som spiller på stor skjerm"
+		},
+		{
+		src: "/photos/3_final.jpg",
+		alt: "Deltakere og crew diskuterer konkurranse"
+		},
+		/*
+		{
+		src: "/photos/4_final.jpg",
+		alt: "2 crewmedlemmer sosialiserer"
+		},*/
+		{
+		src: "/photos/5_final.jpg",
+		alt: "Deltaker spiller beat saber"
+		},
+	];
+
 	const API_URL = __myapp.env.API_URL
 	const APP_HOST = __myapp.env.APP_HOST
 	const APP_PROTOCOL = __myapp.env.APP_PROTOCOL
@@ -79,13 +103,13 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		<div class="splash">
 			<div class="splash-inner">
 				<Logo />
-				<h2 class="lanTitle">Gaming og Digital kultur i Asker Kulturhus</h2>
+				<h1 class="lanTitle">Gaming og Digital kultur i Asker Kulturhus</h1>
 				{#await fetchMetadata}
 				{:then data}
 				<div class="button_container ticket_button_container">
 					<a href={`${APP_PROTOCOL}://delta.${APP_HOST}`}>
 						<div class="buy_ticket_btn">
-							<h2>Delta</h2>
+							<h1>Delta</h1>
 						</div>
 					</a>
 				</div>
@@ -114,7 +138,13 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		</div>
 	</div>
 	<div class="explanation">
-		<h2>Om arrangementet</h2>
+		<div class="gallery">
+			{#each images as image}
+				<img src={image['src']} alt={image['alt']} />
+			{/each}
+		</div>
+
+		<h1>Om arrangementet</h1>
 		<div class="editions">
 			<div class="edition">
 				<Fa class="edition-icon" icon={faSnowflake} />
@@ -133,7 +163,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 			</div>
 		</div>
 
-		<h2>Hva kan jeg gjøre på Phoenix LAN?</h2>
+		<h1>Hva kan jeg gjøre på Phoenix LAN?</h1>
 		<div class="editions">
 			<div class="edition">
 				<Fa class="edition-icon" icon={faVrCardboard} />
@@ -169,7 +199,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 
 		<p>Phoenix LAN er en møteplass for ungdom I Asker der de kan dele og dyrke sin interesse for digital kultur med andre. Det er først og fremst et LAN-party der vi også legger vekt på aktiviteter utenom datamaskinen du tok med. I tillegg til en sitteplass der du kan ta med en PC, vil vi ha aktiviteter som VR-stasjoner, konsoller, og arkademaskiner.</p>
 
-		<h2>Bli med på å arrangere moroa</h2>
+		<h1>Bli med på å arrangere moroa</h1>
 
 		<p>Phoenix LAN er et ungdomsarrangement der ungdom står for mye av den frivillige kraften bak arrangementet. Vi vil aldri kunne være noe uten de frivillige som står på for at lanet skal kunne gå rundt. På Phoenix finnes det mange grupper med forskjellige arbeidsoppgaver, fra vertskap og mat, konkurranser og underholdning, til drift av det tekniske.</p>
 
@@ -185,7 +215,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 
 		<div class="button_container">
         </div>
-		<h2>Sosialt</h2>
+		<h1>Sosialt</h1>
 		<p>Imellom arangementene kan du henge på vår discord-server. Her kan du holde kontakt med de du møtte under LANet, og stille spørsmål. Phoenix-miljøet er moderert, men det samme kan ikke sies om andre steder på Discord. Vi anbefaler derfor foreldre å passe på hva barn under 18 gjør på Discord, og hvilke miljøer de er med i.
 		<!-- I am sorry to my ancestors for this ugly button -->
 		<div class="button_container ticket_button_container">
@@ -195,12 +225,25 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 				</div>
 			</a>
 		</div>
-		<h2>Spørsmål</h2>
+		<h1>Spørsmål</h1>
 		<p>Spørsmål kan sendes til info@phoenixlan.no</p>
 	</div>
 </main>
 
 <style>
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.gallery > img {
+		width: 50%;
+	}
+	@media only screen and (max-width: 500px) {
+		.gallery > img {
+			width: 100% !important;
+		}
+	}
 	.button_container > :global(a) {
         user-select: none;
 
@@ -310,7 +353,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		width: 25em;
 		height: 6em;
 	}
-	.join_discord_btn > h2 {
+	.join_discord_btn > h1 {
 		text-decoration: none;
 
 	}
@@ -332,6 +375,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		height: 6em;
 	}
 	.buy_ticket_btn > h2 {
+		margin: 0;
 		text-decoration: none;
 
 	}
@@ -386,39 +430,6 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 		font-size: 7em;
 	}
 
-	h1 {
-		color: #ffffff;
-		text-transform: uppercase;
-		font-size: 3em;
-		font-weight: 100;
-	}
-
-	h2 {
-		color: #ffffff;
-		text-transform: uppercase;
-		font-size: 2em;
-		font-weight: 100;
-		margin: 0;
-	}
-	
-	h3 {
-		color: #ffffff;
-		text-transform: uppercase;
-		font-size: 1.9em;
-		font-weight: 100;
-		margin: 0;
-	}
-
-
-
-	@media only screen and (min-width: 960px) {
-		h1 {
-			font-size: 4em;
-		}
-		h2 {
-			font-size: 3em;
-		}
-	}
 
 	p {
 		color: #ffffff;

@@ -5,6 +5,58 @@ html, body {
 	width: 100%;
 }
 
+h1 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 100;
+}
+
+h2 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	font-weight: 100;
+}
+
+main h2:after {
+    content: " ";
+    display: block;
+    border: 2px solid #f451a0;
+    width: 100%;
+    margin-top: 0.4em;
+}
+
+h3 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.6em;
+	font-weight: 100;
+}
+
+a {
+	color: oklch(67.92% 0.21 354.36);
+}
+
+a:visited {
+	color: oklch(50% 0.21 354.36);
+}
+
+
+
+@media only screen and (min-width: 960px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: 1.9em;
+	}
+}
+
 p {
 	font-size: 1.2em;
 }

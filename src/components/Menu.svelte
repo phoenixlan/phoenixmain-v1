@@ -20,7 +20,7 @@
             <div class="article-icon">
                 <Fa icon={faHome} />
             </div>
-            <h2>Forside</h2>
+            <h3>Forside</h3>
         </div>
     </Link>
     <Link to="/foreldre">
@@ -28,7 +28,7 @@
             <div class="article-icon">
                 <Fa icon={faChild} />
             </div>
-            <h2>Forelder?</h2>
+            <h3>Forelder?</h3>
         </div>
     </Link>
     <Link to="/hvaErEtLan">
@@ -36,7 +36,7 @@
             <div class="article-icon">
                 <Fa icon={faEthernet} />
             </div>
-            <h2>Hva er et LAN?</h2>
+            <h3>Hva er et LAN?</h3>
         </div>
     </Link>
     <Link to="/regler">
@@ -44,7 +44,7 @@
             <div class="article-icon">
                 <Fa icon={faShieldAlt} />
             </div>
-            <h2>Regler og sikkerhet</h2>
+            <h3>Regler og sikkerhet</h3>
         </div>
     </Link>
     <Link to="/konkurranser">
@@ -52,7 +52,7 @@
             <div class="article-icon">
                 <Fa icon={faTrophy} />
             </div>
-            <h2>Konkurranser</h2>
+            <h3>Konkurranser</h3>
         </div>
     </Link>
     <Link to="/pakkeliste">
@@ -60,7 +60,7 @@
             <div class="article-icon">
                 <Fa icon={faList} />
             </div>
-            <h2>Pakkeliste</h2>
+            <h3>Pakkeliste</h3>
         </div>
     </Link>
     <Link to="/pa_phoenix">
@@ -68,7 +68,7 @@
             <div class="article-icon">
                 <Fa icon={faMapMarkerAlt} />
             </div>
-            <h2>På phoenix</h2>
+            <h3>På phoenix</h3>
         </div>
     </Link>
     <Link to="/agenda">
@@ -76,7 +76,7 @@
             <div class="article-icon">
                 <Fa icon={faCalendarAlt} />
             </div>
-            <h2>Tidsskjema</h2>
+            <h3>Tidsskjema</h3>
         </div>
     </Link>
 </aside>

@@ -66,13 +66,6 @@ h2 {
     margin-bottom: 0;
 }
 
-h2:after {
-    content: " ";
-    display: block;
-    border: 2px solid #f451a0;
-    width: 100%;
-    margin-top: 0.4em;
-}
 .content {
     padding: 1rem;
     background-color: #111111;

@@ -23,6 +23,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "sirv-cli": "^1.0.0",
     "svelte-fa": "^2.2.0",
+    "svelte-images": "^0.0.95",
     "svelte-loading-spinners": "^0.3.4",
     "svelte-markdown": "^0.1.8",
     "svelte-routing": "^1.6.0",

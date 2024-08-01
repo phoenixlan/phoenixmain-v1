@@ -7,7 +7,7 @@ import PageHeader from '../components/PageHeader.svelte';
     <PageHeader><h1>På Phoenix LAN</h1></PageHeader>
     <div class="content">
         <div class="content-inner">
-            <h1>Hva er tilgjengelig?</h1>
+            <h2>Hva er tilgjengelig?</h2>
             <p>På arrangemanget er det en cafè, denne opereres av Radar.
                 Den er åpen under hele phoenix, så selv om butikkene er stengt vil det fremdeles være mulig å kjøpe mat og drikke.</p>
             <p>Under arrangementet vil det være en sovesal tilgjengelig for deltagere og crew, fredag kveld til søndag morgen.
@@ -16,7 +16,7 @@ import PageHeader from '../components/PageHeader.svelte';
             <p>Det vil være datahjelp/tech support under hele arrangementet. Dette gjelder kun arrangement-relevante problemer. Vi har ikke mulighet til å gjøre fysiske endringer på maskinen din, for å hindre at phoenix eller crewet skal stå annsvarlig for eventuelle feil eller skader som kan forekomme.
                 Tech support / datahjelp vil ikke kunne hjelpe med rekvisita som saks og gaffateip.
                 Det er en vannstasjon både på Radar Cafè og i Tech-desken.</p>
-            <h1>Informasjon om plassen</h1>
+            <h2>Informasjon om plassen</h2>
             <p>Hver plass er minimum <b>70x70cm</b>.
                 Det er lov til å ta med hylle, men den kan ikke gå utenom plassen.
                 Du kan også ta med egen stol, men da bare en vanlig kontorstol. Ikke noe stor stressless, tenk på sidemannen</p>
