@@ -8,19 +8,6 @@ import PageHeader from "../components/PageHeader.svelte";
     <PageHeader><h1>Konkurranser</h1></PageHeader>
     <div class="content">
         <div class="content-inner">
-            <h2>Konkurransene for Høst 2024 har ikke blitt annonsert enda</h2>
-            <p>Men i 2023 hadde vi dette:</p>
-            <ul>
-                <li>Valorant</li>
-                <li>Minecraft (Battle Royale, Build Battle)</li>
-                <li>CTF (Phoenix Datasnok)</li>
-                <li>Beatsaber</li>
-                <li>Diverse småkonkurranser i løpet av LANet</li>
-            </ul>
-            <h3>Lyst til å ha konkurranse i noe som ikke er på lista?</h3>
-            <p>Vi holder på å planlegge konkurransene i disse dager. Det er bare å ta kontakt på Discord for å komme med forslag. Du kan også bli med i crew og være med på å arrangere.</p>
-            <!--
-            <h2>2023</h2>
             <p>Er det konkurranser du savner? Si ifra til oss på Discord, eller søk Game crew og bli med på å arrangere det selv!</p>
             <h2>Valorant</h2>
             <ul>
@@ -28,14 +15,10 @@ import PageHeader from "../components/PageHeader.svelte";
                 <li>No draws</li>
                 <li>Up to 13 wins and/or 26 rounds(30-45 min)</li>
             </ul>
-            <h3> <a href="https://forms.gle/tgExMg9vdZysHCKi8">Påmeldingskjema Lagleder </a></h3>
-            <h3> <a href="https://forms.gle/2UvadeokqLfBTQYj6">Påmeldingskjema Lagkamerat </a></h3>
             <h2>Minecraft Battle Royale</h2>
             <p>Alle mot alle, Hunger Games style. Tre runder vil kjøres totalt. Total poengsum fra de tre rundene vil bestemme vinner, så lurt å slenge seg med på alt!</p>
-            <h3> <a href="https://forms.gle/T8WUzMx2XnLkXQJVA">Påmeldingskjema MC:Battle Royale </a></h3>
             <h2>Minecraft Build Battle</h2>
             <p>Er du mer interessert i bygging enn deathmatch?  Bygg i det frie gjennom LANet, og få sjansen til å vinne premie! En jury fra Phoenix Crew vil gå gjennom alle innslagene og gi vurderinger. Konkurransen starter så snart vi åpner, og du kan bygge frem til søn. kl 11. </p>
-            <h3> <a href="https://forms.gle/rxKEKQPK4ybqXk3PA">Påmeldingskjema MC:Build Battle </a></h3>
             <h2>Phoenix Datasnok</h2>
             <p><b>Påmelding skjer via konkurransesystemet på LANet</b></p>
             <p>Er <b>DU</b> god på data? Vis dine ferdigheter ved å delta på Datasnok, en "hacke-rebus" du vinner ved å løse oppgaver av forskjellig vanskelighetsgrad.</p>
@@ -51,8 +34,6 @@ import PageHeader from "../components/PageHeader.svelte";
             <p>I løpet av LANet arrangerer vi småkonkurranser i alt fra bordtennis til Kahoot og retro-arkademaskin</p>
             <h2>CS: Wingman</h2>
             <p>2v2 dueller i CC:GO competitive mode. Lagkaptein fyller ut skjema for hele duoen under.</p>
-            <h3> <a href="https://forms.gle/MZjzedqTywsiVzev7">Påmeldingskjema CS:Wingman </a></h3>
--->
         </div>
     </div>
 </div>
