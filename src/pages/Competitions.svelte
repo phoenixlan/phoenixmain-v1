@@ -1,9 +1,7 @@
 <script>
-    import { Link } from "svelte-routing";
-    import Logo from '../components/Logo.svelte'
     import PageHeader from "../components/PageHeader.svelte";
 
-    let infoVisibilityStates = [false, false, false, false, false, false]
+    let infoVisibilityStates = [false, false, false, false]
 
     function toggleInfoVisibility(index) {
         infoVisibilityStates[index] = !infoVisibilityStates[index];
@@ -85,7 +83,7 @@
                                     <h4 class="compo-card-subtitle">Online, competitive, solo</h4>
                                 </div>
                                 <div class="compo-body-buttons">
-                                    <a class="compo-button primary" href="https://forms.gle/koGNm8vtKxpNqhEUA" target="_blank">Påmeldingsskjema</a>
+                                    <a class="compo-button primary" href="https://forms.gle/SsZ4qG2nVFtoHqPS9" target="_blank">Påmeldingsskjema</a>
                                     <a class="compo-button secondary" on:click={() => toggleInfoVisibility(2)}>Mer informasjon</a>
                                 </div>
                                 <div class="compo-body-information" style="height:{infoVisibilityStates[2] ? "100%" : "0px"}; overflow:hidden;">
@@ -108,7 +106,7 @@
                                     <h4 class="compo-card-subtitle">Online, casual, solo</h4>
                                 </div>
                                 <div class="compo-body-buttons">
-                                    <a class="compo-button primary" href="https://forms.gle/SsZ4qG2nVFtoHqPS9" target="_blank">Påmeldingsskjema</a>
+                                    <a class="compo-button primary" href="https://forms.gle/koGNm8vtKxpNqhEUA" target="_blank">Påmeldingsskjema</a>
                                     <a class="compo-button secondary" on:click={() => toggleInfoVisibility(3)}>Mer informasjon</a>
                                 </div>
                                 <div class="compo-body-information" style="height:{infoVisibilityStates[3] ? "100%" : "0px"}; overflow:hidden;">
