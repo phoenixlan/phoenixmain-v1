@@ -35,7 +35,7 @@
                             <div class="compo-container-body">
                                 <div class="compo-body-title">
                                     <h3 class="compo-card-title">Valorant</h3>
-                                    <h4 class="compo-card-subtitle">Online, competitive, lagkonkurranse 5v5</h4>
+                                    <h4 class="compo-card-subtitle">Online, competitive, lagkonkurranse 3v3</h4>
                                 </div>
                                 <div class="compo-body-buttons">
                                     <a class="compo-button primary" href="https://forms.gle/THcS3d85qEf7Ey3P8" target="_blank">Påmeldingsskjema lagleder</a>
