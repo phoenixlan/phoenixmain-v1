@@ -18,6 +18,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 	import { faVrCardboard } from '@fortawesome/free-solid-svg-icons'
 	import { faUserPlus } from '@fortawesome/free-solid-svg-icons'
 	import { faMicrochip } from '@fortawesome/free-solid-svg-icons'
+	import { faCar } from '@fortawesome/free-solid-svg-icons'
 	import Background from '../components/Background.svelte';
 
 	import Logo from '../components/Logo.svelte';
@@ -150,9 +151,14 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 				<p>Hver deltaker får en sitteplass med internett(gigabit ethernet) og strøm. WiFi er ikke garantert, da det ikke er egnet for gaming</p>
 			</div>
 			<div class="edition">
+				<Fa class="edition-icon" icon={faCar} />
+				<h3>Spille racing-sim</h3>
+				<p>Phoenix stiller i år med Racing simulator-rigg!</p>
+			</div>
+			<div class="edition">
 				<Fa class="edition-icon" icon={faGamepad} />
 				<h3>Spille på arkademaskiner</h3>
-				<p>Vi stiller med flere fysiske arkademaskiner, både retro og moderne</p>
+				<p>Vi stiller med flere fysiske arkademaskiner</p>
 			</div>
 			<div class="edition">
 				<Fa class="edition-icon" icon={faAward} />
