@@ -16,6 +16,17 @@
                 <div class="compo-container">
                     <div class="compo-header-information">
                         <div>
+                            <h2>Konkurranser</h2>
+                            <p>Det er fortsatt lenge igjen til neste LAN, og vi har ikke planlagt hvilke konkurranser vi skal ha enda.</p>
+                            <p>Har du forslag eller ønsker til hvilke konkurranser vi skal sette opp, kontakt oss på <a href="https://discord.gg/rSGtYEMQqh">Discord</a>!</p>
+                            <p>Har du lyst til å være med og arrangere konkurransene anbefaler vi at du blir med i crewet, det gjør du ved å sende inn en crewsøknad <a href="https://delta.phoenixlan.no/crew">her</a>!</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="compo-container">
+                    <div class="compo-header-information">
+                        <div>
                             <h2>Konkurranser (7)</h2>
                             <p>Her er listen for konkurransene med informasjon og påmeldingsskjema for årets LAN!<br/>Konkurransene arrangeres av game crewet vårt. Er du interessert i å være med å arrangere konkurranser så kan du søke deg inn i game crewet vårt!</p>    
                         </div>
@@ -193,6 +204,7 @@
                         </div>
                     </div>
                 </div>  
+                -->
             </div>
         </div>
     </div>
@@ -205,6 +217,12 @@ p {
 h2 {
     display: inline-block;
     margin-bottom: 0;
+}
+a {
+    color: #f451a0;
+}
+a:hover {
+    color: #fa83b6;
 }
 
 h2:after {
