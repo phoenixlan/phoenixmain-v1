@@ -47,7 +47,7 @@
                             <div class="compo-container-body">
                                 <div class="compo-body-title">
                                     <h3 class="compo-card-title">Fortnite</h3>
-                                    <h4 class="compo-card-subtitle">Online, competitive</h4>
+                                    <h4 class="compo-card-subtitle">Online, competitive, solo</h4>
                                 </div>
                                 <div class="compo-body-buttons">
                                     <a class="compo-button secondary" on:click={() => toggleInfoVisibility(0)}>Mer informasjon</a>
@@ -55,7 +55,6 @@
                                 <div class="compo-body-information" style="height:{infoVisibilityStates[0] ? "100%" : "0px"}; overflow:hidden;">
                                     Informasjon:
                                     <li>Standard battle royale mode</li>
-                                    <li>No build</li>
                                     <li>Opptil 6 runder (20-30 minutter, konkurransen kan ta opptil 3 timer)</li>
                                 </div>
                             </div>
