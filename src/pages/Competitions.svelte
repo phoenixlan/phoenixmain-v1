@@ -17,18 +17,17 @@
     <div class="content">
         <div class="content-inner">
             <div class="compo-body">
-                <!--
                 <div class="compo-container">
                     <div class="compo-header-information">
                         <div>
                             <h2>Konkurranser</h2>
                             <p>Det er fortsatt lenge igjen til neste LAN, og vi har ikke planlagt hvilke konkurranser vi skal ha enda.</p>
                             <p>Har du forslag eller ønsker til hvilke konkurranser vi skal sette opp, kontakt oss på <a href="https://discord.gg/rSGtYEMQqh">Discord</a>!</p>
-                            <p>Har du lyst til å være med og arrangere konkurransene anbefaler vi at du blir med i crewet, det gjør du ved å sende inn en crewsøknad <a href="https://delta.phoenixlan.no/crew">her</a>!</p>
+                            <p>Eller har du lyst til å være med og arrangere konkurransene? Bli med i crewet og søk deg inn til tech, det gjør du ved å sende inn en crewsøknad. <a href="https://delta.phoenixlan.no/crew">Trykk her for å søke!</a></p>
                         </div>
                     </div>
                 </div>
-                -->
+                <!--
                 <div class="compo-container">
                     <div class="compo-header-information">
                         <div>
@@ -217,8 +216,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>  
+                -->
             </div>
         </div>
     </div>
