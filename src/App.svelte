@@ -78,9 +78,6 @@
 			<a href="https://asker.kommune.no">
 				<img class="sponsor" src="images/sponsors/asker_kommune.svg" alt="Asker Kommune" />
 			</a>
-			<a href="https://www.homenet.no/">
-				<img class="sponsor" src="images/sponsors/homenet.png" alt="Homenet | Full fart & full frihet" />
-			</a>
 			<a href="https://viken.no/bleiker-vgs/">
 				<img class="sponsor" src="images/sponsors/bleiker.png" alt="Bleiker VGS" />
 			</a>
