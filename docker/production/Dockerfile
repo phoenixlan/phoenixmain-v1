@@ -1,4 +1,4 @@
-FROM node:current as build
+FROM node:24-alpine as build
 
 ARG API_URL
 ARG APP_HOST
