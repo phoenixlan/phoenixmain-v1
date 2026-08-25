@@ -15,10 +15,9 @@ import PageHeader from '../components/PageHeader.svelte';
             <p>Foreldre er velkomne til å besøke oss, men da gjerne med avtale om omvisning med en ungdomsarbeider.  </p>
 
             <h1>Alder</h1>
-            <p>Vinterferie arrangementet anbefales for ungdommer som går i 8-trinn til og med fylte maks fylte 20 år.</p>
-            <p>Høstferie arrangementet er for ungdom mellom 8 trinn og fylte 25 år.</p>
+            <p>Arrangementet har en øvre aldersgrense på fylte 25 år, og anbefales for ungdom som går i 8-trinn og opp.</p>
+            <p>Ungdommer som er yngre og helt ned til 6-trinn kan delta på arrangementet med godkjenning fra forleder. Vi oppfordrer yngre barn til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
             <p>For å være crew vil aldersgrensen være 8 trinn til fylte 25 år.</p>
-            <p>Ungdommer som er yngre og helt ned til 6-trinn kan delta på vinterferie arrangementet med godkjenning fra forleder. Vi oppfordrer yngre barn til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
             <p>Ved kjøp av billett for yngre barn vil det være krav til kontaktinformasjon til foresatte.</p>
 
             <h1>Portforbud for ungdom under 18</h1>
@@ -26,7 +25,7 @@ import PageHeader from '../components/PageHeader.svelte';
             <p>Dersom barnet skal få lov til å gå ut av bygget i portforbud-tiden må vi ha kommunikasjon med foresatte. Dette gjelder også for crew-ungdom.</p>
 
             <h1>Hvordan foregår det?</h1>
-            <p>Vinterferie-varianten av LANet varer over to dager – fra lørdag kl. 13:00 til søndag kl: 14.00. Høstverie-varianten varer fra fredag kl. 18:00 til søndag kl: 12:00</p>
+            <p>LANet fra fredag kl. 18:00 til søndag kl: 12:00</p>
                 
             <p>Phoenix LAN er for ungdom – og av ungdom. Det vil si at det er i stor grad ungdommen selv som står for arrangementet, med planlegging, gjennomføring og opprydding. På denne måten blir arrangementet en sosial arena der unge mennesker kan bygge opp relasjoner og drive positivt arbeid. Vi oppfordrer ungdom til å melde seg inn i crew, og bidra til å utvikle og gjennomføre dette arrangementet.</p>
 
