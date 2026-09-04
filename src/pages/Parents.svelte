@@ -41,7 +41,7 @@
                             Det vil si at barn under denne alderen kan delta, men at det er deg som forelder som er ansvarlig for å bestemme når barnet deres er moden nok til å dra.
                         </p>
                         <p>Vi oppfordrer barn under 13-års alderen til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
-                        <p>Vi har en øvre aldersgrense som er på 26 år. Etter året du fyller 26 år kan du ikke lenger delta på våres arrangement.</p>
+                        <p>Vi har en øvre aldersgrense som er på 26 år. Det vil si du kan delta på arrangementet ut samme året som du fyller 26 år. Etter dette kan du ikke lenger delta på arrangement vårt.</p>
                         <p>Som crew hos Phoenix LAN må du være mellom 13 og 26 år.</p>
                         <p>Ved kjøp av billett for yngre barn vil det være krav til kontaktinformasjon til foresatte.</p>
                     </div>
@@ -55,7 +55,7 @@
                     <div class="parents-information">
                         <h2>Oppmøte og hva man skal ta med seg</h2>
                         <p>Deltakerne møter opp til arrangementets start, sjekker inn med billetten man kjøpte, eller har fått på <a href={`${APP_PROTOCOL}://delta.${APP_HOST}`}>billettsiden</a>, og får tildelt et adgangsbånd. Deretter finner man sitteplassen sin hvor man setter opp <b>sin egen</b> datamaskin og/eller konsoll, skjerm, tastatur, mus, og eventuelt medbragt stol. Vi stiller altså ikke med gaming-utstyr, dette skal man ta med selv.</p>
-                        <p>Gjennom helgen så kan tiden brukes på sitteplassen sin for å spille med venner, og delta på konkurranser. Hvis man har lyst til på litt mer variasjon kan man gå til arkaderommet i multisalen for å prøve ting man ikke har hjemme. Tidligere har dette vært vr stasjoner, racing simulatorer, nintendo switch, m.m. Dersom man har lyst på mat, drikke eller snacks kan man bevege seg til Radar Kafé hvor det er servering. Når man til slutt er trøtt og har behov for å sove kan man gå til sovesalen i teatersalen for å sove.</p>
+                        <p>Gjennom helgen så kan tiden brukes på sitteplassen sin for å spille med venner, og delta på konkurranser. Hvis man har lyst til på litt mer variasjon kan man gå til arkaderommet i multisalen og prøve ting man kanskje ikke har hjemme. Tidligere har dette vært vr stasjoner, racing simulatorer, nintendo switch, m.m. Dersom man har lyst på mat, drikke eller snacks kan man bevege seg til Radar Kafé hvor det er servering. Når man til slutt er trøtt og har behov for å sove kan man gå til sovesalen i teatersalen for å sove.</p>
                     </div>
 
                     <div class="parents-information">
