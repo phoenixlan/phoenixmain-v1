@@ -15,7 +15,7 @@
                 <div class="parents-container">
                     <div class="parents-information">
                         <h2>Om Phoenix LAN</h2>
-                        <p>Phoenix LAN er et LAN party / datatreff arrangert av ungdommer, for ungdommer for spill-, og tech interesserte i Asker og omegn.</p>
+                        <p>Phoenix LAN er et LAN party / datatreff arrangert av ungdommer, for ungdommer for spill, og tech interesserte i Asker og omegn.</p>
                         <p>Arrangementet er under ungdomsorganisasjonen Radar Event, med et tett samarbeid med ungdomsavdelingen UngKultur Asker som er ansvarlig for drift av ungdomsklubbene i hele Asker kommune, og kulturarrangementer som UKM, Asker festivalen, og Nattkino.</p>
                     </div>
 
@@ -23,7 +23,7 @@
                         <h2>Våres mål og ambisjoner</h2>
                         <p>Vi har to mål. Å skape en møteplass for spill- og tech interesserte ungdommer, og tilby muligheten til å prøve ting man kanskje ikke har hjemme.</p>
                         <p>Vi arrangerer LAN party første helgen i høstferien hvor vi åpner dørene fredag kveld, og avslutter søndag morgen. Vi ønsker å skape en innholdsrik helg for alle som kommer hvor man kan henge med venner, spille, delta på konkurranser, overnatte, og bruke tiden på et stort arkaderom som er fylt med utstyr man kanskje ikke har hjemme. Dette er alt fra VR stasjoner, til racing simulatorer, Nintendo switch med et stort utvalg spill, og arkademaskiner.</p>
-                        <p>Det mest positive med ungdoms-LAN er mulighet for å bli kjent med, og være sosial med ungdom med like interesser. Vi tror mange ungdommer har stor glede av gaming i en mer sosial setting.</p>
+                        <p>Det mest positive med ungdoms-LAN er mulighet for å bli kjent med, og være sosial med ungdom med like interesser. Vi tror mange ungdommer har stor glede av gaming i en mer sosial setting. Se på det som et sosialt og morsomt <i>tre-dagers all you can game</i> arrangement for barn og unge!</p>
                     </div>
 
                     <div class="parents-information">
