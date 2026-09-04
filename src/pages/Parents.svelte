@@ -41,7 +41,7 @@
                             Det vil si at barn under denne alderen kan delta, men at det er deg som forelder som er ansvarlig for å bestemme når barnet deres er moden nok til å dra.
                         </p>
                         <p>Vi oppfordrer barn under 13-års alderen til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
-                        <p>Vi har en øvre aldersgrense som er på 26 år. Etter fylte 26 år kan du ikke lenger delta på våres arrangement.</p>
+                        <p>Vi har en øvre aldersgrense som er på 26 år. Etter året du fyller 26 år kan du ikke lenger delta på våres arrangement.</p>
                         <p>Som crew hos Phoenix LAN må du være mellom 13 og 26 år.</p>
                         <p>Ved kjøp av billett for yngre barn vil det være krav til kontaktinformasjon til foresatte.</p>
                     </div>
