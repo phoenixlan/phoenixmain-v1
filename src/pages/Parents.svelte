@@ -1,6 +1,9 @@
 <script>
     import Logo from '../components/Logo.svelte';
-import PageHeader from '../components/PageHeader.svelte';
+    import PageHeader from '../components/PageHeader.svelte';
+
+	const APP_HOST = __myapp.env.APP_HOST
+	const APP_PROTOCOL = __myapp.env.APP_PROTOCOL
 </script>
 
 <div class="contentSimulator">
@@ -19,7 +22,7 @@ import PageHeader from '../components/PageHeader.svelte';
                     <div class="parents-information">
                         <h2>Våres mål og ambisjoner</h2>
                         <p>Vi har to mål. Å skape en møteplass for spill- og tech interesserte ungdommer, og tilby muligheten til å prøve ting man kanskje ikke har hjemme.</p>
-                        <p>Vi arrangerer derfor et LAN party første helgen i høstferien hvor vi åpner dørene fredag kveld, og avslutter søndag morgen. Vi ønsker å skape en innholdsrik helg for alle som kommer hvor man kan henge med venner, spille, delta på konkurranser, overnatte, og bruke tiden på et stort arkaderom som er fylt med utstyr man kanskje ikke har hjemme. Dette er alt fra VR stasjoner, til racing simulatorer, Nintendo switch med et stort utvalg spill, og arkademaskiner.</p>
+                        <p>Vi arrangerer LAN party første helgen i høstferien hvor vi åpner dørene fredag kveld, og avslutter søndag morgen. Vi ønsker å skape en innholdsrik helg for alle som kommer hvor man kan henge med venner, spille, delta på konkurranser, overnatte, og bruke tiden på et stort arkaderom som er fylt med utstyr man kanskje ikke har hjemme. Dette er alt fra VR stasjoner, til racing simulatorer, Nintendo switch med et stort utvalg spill, og arkademaskiner.</p>
                         <p>Det mest positive med ungdoms-LAN er mulighet for å bli kjent med, og være sosial med ungdom med like interesser. Vi tror mange ungdommer har stor glede av gaming i en mer sosial setting.</p>
                     </div>
 
@@ -27,14 +30,17 @@ import PageHeader from '../components/PageHeader.svelte';
                         <h2>Av ungdom, for ungdom</h2>
                         <p>Arrangementet er drevet av frivillige ungdommer med støtte fra UngKultur Asker.</p>
                         <p>Det vil si at det er i stor grad ungdommen selv som står for arrangementet, med planlegging, gjennomføring og opprydding. På denne måten blir arrangementet en sosial arena der unge mennesker kan bygge opp relasjoner og drive positivt arbeid. Vi oppfordrer ungdom til å melde seg inn i crew, og bidra til å utvikle og gjennomføre dette arrangementet.</p>
-                        <p>UngKultur Asker stiller med ungdomsarbeidere som bidrar med å sikre, og hjelpe til, og er minimum 3 på jobb til enhver tid gjennom arrangementet. Normalt gjennom arrangementet vil det være minst 6 kommunalt ansatte ungdomsarbeidere på jobb.</p>
+                        <p>UngKultur Asker stiller med ungdomsarbeidere som bidrar med å sikre, og hjelpe til under arrangementet. På dagtid er det flere ansatte på jobb, på kvelds- og nattid er det mindre. UngKultur stiller med minimum 2 på jobb til enhver tid gjennom arrangementet i tillegg til de ansatte på driftsavdelingen til Asker kulturhus som vaktmester, og teknikere.</p>
                     </div>
 
                     <div class="parents-information">
                         <h2>Alder</h2>
-                        <p>Som deltaker hos Phoenix LAN har vi en anbefalt nedre aldersgrense, og en øvre aldersgrense.</p>
-                        <p>Vår anbefalte nedre aldersgrense for å delta på Phoenix LAN er når man starter i 8. klasse på ungdomsskolen når man fyller 13 år. Vi understreker at dette ikke er en fast aldersgrense men en anbefaling. Deg som forelder er ansvarlig for å bestemme når barnet deres er moden nok til å dra.</p>
-                        <p>Ungdommer som er yngre og helt ned til 6-trinn kan delta på arrangementet med godkjenning fra forleder. Vi oppfordrer yngre barn til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
+                        <p>Som deltaker hos Phoenix LAN har vi en <b>anbefalt</b> nedre aldersgrense, og en øvre aldersgrense.</p>
+                        <p>
+                            Vår <b>anbefalte</b> nedre aldersgrense for å delta på Phoenix LAN er årskullet som starter i 8. klasse på ungdomsskolen, altså 13-års alderen. Vi understreker at dette ikke er en fast aldersgrense men en anbefaling.<br/>
+                            Det vil si at barn under denne alderen kan delta, men at det er deg som forelder som er ansvarlig for å bestemme når barnet deres er moden nok til å dra.
+                        </p>
+                        <p>Vi oppfordrer barn under 13-års alderen til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
                         <p>Vi har en øvre aldersgrense som er på 26 år. Etter fylte 26 år kan du ikke lenger delta på våres arrangement.</p>
                         <p>Som crew hos Phoenix LAN må du være mellom 13 og 26 år.</p>
                         <p>Ved kjøp av billett for yngre barn vil det være krav til kontaktinformasjon til foresatte.</p>
@@ -47,14 +53,14 @@ import PageHeader from '../components/PageHeader.svelte';
                     </div>
 
                     <div class="parents-information">
-                        <h2>Oppmøte</h2>
-                        <p>Deltakerne møter opp til arrangementets start, sjekker inn med billetten man har på billettsiden, og får tildelt et adgangsbånd. Deretter finner man sitteplassen sin hvor man setter opp datamaskin og/eller konsoll, skjerm, tastatur, mus, og eventuelt medbragt stol.</p>
-                        <p>Gjennom helgen så kan tiden brukes på sitteplassen sin for å spille med venner, og delta på konkurranser. Hvis man har lyst til på litt mer variasjon kan man gå til arkaderommet i multisalen for å prøve racing simulator, vr stasjoner, arkademaskiner, og nintendo switch. Dersom man har lyst på mat, drikke eller snacks kan man bevege seg til Radar Kafé hvor det er servering. Når man til slutt er trøtt og har behov for å sove kan man gå til sovesalen i teatersalen for å sove.</p>
+                        <h2>Oppmøte og hva man skal ta med seg</h2>
+                        <p>Deltakerne møter opp til arrangementets start, sjekker inn med billetten man kjøpte, eller har fått på <a href={`${APP_PROTOCOL}://delta.${APP_HOST}`}>billettsiden</a>, og får tildelt et adgangsbånd. Deretter finner man sitteplassen sin hvor man setter opp <b>sin egen</b> datamaskin og/eller konsoll, skjerm, tastatur, mus, og eventuelt medbragt stol. Vi stiller altså ikke med gaming-utstyr, dette skal man ta med selv.</p>
+                        <p>Gjennom helgen så kan tiden brukes på sitteplassen sin for å spille med venner, og delta på konkurranser. Hvis man har lyst til på litt mer variasjon kan man gå til arkaderommet i multisalen for å prøve ting man ikke har hjemme. Tidligere har dette vært vr stasjoner, racing simulatorer, nintendo switch, m.m. Dersom man har lyst på mat, drikke eller snacks kan man bevege seg til Radar Kafé hvor det er servering. Når man til slutt er trøtt og har behov for å sove kan man gå til sovesalen i teatersalen for å sove.</p>
                     </div>
 
                     <div class="parents-information">
                         <h2>Sikkerhet</h2>
-                        <p>Det er mange medlemmer i ungdoms-crewet, og ansatte fra UngKultur og kulturhuset, som hele tiden overvåker områdene i form av vaktposter og streifelag som går rundt omkring på bygget. Sikkerhet er en stor satsning for LANet. Det vil også være et innleid sanitets-vakt under hele arrangementet. Skulle du bli bekymret, eller lure på noe, ta kontakt med oss ansatte. Se kontaktinfo under.</p>
+                        <p>Det er mange medlemmer i ungdoms-crewet, og ansatte fra UngKultur og kulturhuset, som hele tiden overvåker områdene i form av streifelag som går rundt omkring på bygget. Sikkerhet er en stor satsning for LANet. Det vil også være et innleid sanitets-vakt under hele arrangementet. Skulle du bli bekymret, eller lure på noe, ta kontakt med oss ansatte. Se kontaktinfo under.</p>
                         <p>Vi har også samarbeid både med Brannvesenet og Politiet som ofte kommer på besøk under arrangementet.</p>
                     </div>
 
