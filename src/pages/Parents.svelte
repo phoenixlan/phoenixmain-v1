@@ -30,7 +30,7 @@
                         <h2>Av ungdom, for ungdom</h2>
                         <p>Arrangementet er drevet av frivillige ungdommer med støtte fra UngKultur Asker.</p>
                         <p>Det vil si at det er i stor grad ungdommen selv som står for arrangementet, med planlegging, gjennomføring og opprydding. På denne måten blir arrangementet en sosial arena der unge mennesker kan bygge opp relasjoner og drive positivt arbeid. Vi oppfordrer ungdom til å melde seg inn i crew, og bidra til å utvikle og gjennomføre dette arrangementet.</p>
-                        <p>UngKultur Asker stiller med ungdomsarbeidere som bidrar med å sikre, og hjelpe til under arrangementet. På dagtid er det flere ansatte på jobb, på kvelds- og nattid er det mindre. UngKultur stiller med minimum 2 på jobb til enhver tid gjennom arrangementet i tillegg til de ansatte på driftsavdelingen til Asker kulturhus som vaktmester, og teknikere.</p>
+                        <p>UngKultur Asker stiller med ungdomsarbeidere som bidrar med å sikre, og hjelpe til under arrangementet. På dagtid er det flere ansatte på jobb, på kvelds- og nattid er det mindre, uansett så skal UngKultur stille med minimum 2 på jobb til enhver tid gjennom arrangementet. I tillegg stiller Asker kulturhus med ansatte fra driftsavdelingen som vaktmester, og teknikere.</p>
                     </div>
 
                     <div class="parents-information">
