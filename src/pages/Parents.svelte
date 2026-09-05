@@ -1,63 +1,134 @@
 <script>
     import Logo from '../components/Logo.svelte';
-import PageHeader from '../components/PageHeader.svelte';
+    import PageHeader from '../components/PageHeader.svelte';
+
+	const APP_HOST = __myapp.env.APP_HOST
+	const APP_PROTOCOL = __myapp.env.APP_PROTOCOL
 </script>
 
 <div class="contentSimulator">
     <PageHeader><h1>For foreldre</h1></PageHeader>
+
     <div class="content">
         <div class="content-inner">
-            <p>Nye Phoenix LAN er et samarbeid mellom ungdomsarrangøren «Radar Event» og Asker kommune sin ungdomsavdeling, Ungkultur Asker. Vi som jobber i Ungkultur er til vanlig ansvarlig for drift av ungdomsklubbene i hele Asker samt kulturarrangementer som UKM, Asker festivalen, Nattkino og LAN.</p>
-            <p>Phoenix LAN er et ungdomsinitiativ og vi i Ungkultur ønsker at ungdommene i stor grad skal arrangere og være ansvarlige for mange av oppgavene. Vi ungdomsarbeidere bidrar med å sikre og hjelpe til, og er minimum 3 på jobb til enhver tid gjennom arrangementet. Normalt gjennom arrangementet er vi 6-8 kommunalt ansatte ungdomsarbeidere på jobb.</p>
-            <p>Nå i 2023 har vi gjennomført LAN i samarbeid med ungdomsarrangør to ganger i året i 18 år! Når det var på sitt største, var det over 500 deltakere. Vi skal nå sammen med ungdommen bygge opp et nytt konsept med nye og yngre ungdomsarrangører. Derfor starter vi litt forsiktig.</p>
-            <p>Det mest positive med ungdoms-LAN er mulighet for å bli kjent med, og være sosial med ungdom med like interesser. Vi tror mange ungdommer har stor glede av gaming i en mer sosial setting.</p>
-            <p>Gaming er en veldig stor del av mange ungdommers liv og Ungkultur ønsker å ta dette på alvor, gi kulturen en arena, samt sikre det ved voksen tilstedeværelse og innsikt.</p>
-            <p>Foreldre er velkomne til å besøke oss, men da gjerne med avtale om omvisning med en ungdomsarbeider.  </p>
+            <div class="parents-body">
+                <div class="parents-container">
+                    <div class="parents-information">
+                        <h2>Om Phoenix LAN</h2>
+                        <p>Phoenix LAN er et LAN party / datatreff arrangert av ungdommer, for ungdommer for spill, og tech interesserte i Asker og omegn.</p>
+                        <p>Arrangementet er under ungdomsorganisasjonen Radar Event, med et tett samarbeid med ungdomsavdelingen UngKultur Asker som er ansvarlig for drift av ungdomsklubbene i hele Asker kommune, og kulturarrangementer som UKM, Asker festivalen, og Nattkino.</p>
+                    </div>
 
-            <h1>Alder</h1>
-            <p>Vinterferie arrangementet anbefales for ungdommer som går i 8-trinn til og med fylte maks fylte 20 år.</p>
-            <p>Høstferie arrangementet er for ungdom mellom 8 trinn og fylte 25 år.</p>
-            <p>For å være crew vil aldersgrensen være 8 trinn til fylte 25 år.</p>
-            <p>Ungdommer som er yngre og helt ned til 6-trinn kan delta på vinterferie arrangementet med godkjenning fra forleder. Vi oppfordrer yngre barn til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
-            <p>Ved kjøp av billett for yngre barn vil det være krav til kontaktinformasjon til foresatte.</p>
+                    <div class="parents-information">
+                        <h2>Våres mål og ambisjoner</h2>
+                        <p>Vi har to mål. Å skape en møteplass for spill- og tech interesserte ungdommer, og tilby muligheten til å prøve ting man kanskje ikke har hjemme.</p>
+                        <p>Vi arrangerer LAN party første helgen i høstferien hvor vi åpner dørene fredag kveld, og avslutter søndag morgen. Vi ønsker å skape en innholdsrik helg for alle som kommer hvor man kan henge med venner, spille, delta på konkurranser, overnatte, og bruke tiden på et stort arkaderom som er fylt med utstyr man kanskje ikke har hjemme. Dette er alt fra VR stasjoner, til racing simulatorer, Nintendo switch med et stort utvalg spill, og arkademaskiner.</p>
+                        <p>Det mest positive med ungdoms-LAN er mulighet for å bli kjent med, og være sosial med ungdom med like interesser. Vi tror mange ungdommer har stor glede av gaming i en mer sosial setting. Se på det som et sosialt og morsomt <i>tre-dagers all you can game</i> arrangement for barn og unge!</p>
+                    </div>
 
-            <h1>Portforbud for ungdom under 18</h1>
-            <p>Vi har innført portforbud imellom 23:00 og 06:00. Dette er gjort for å stoppe ungdom fra å gå rundt alene i Asker sentrum om natta.</p>
-            <p>Dersom barnet skal få lov til å gå ut av bygget i portforbud-tiden må vi ha kommunikasjon med foresatte. Dette gjelder også for crew-ungdom.</p>
+                    <div class="parents-information">
+                        <h2>Av ungdom, for ungdom</h2>
+                        <p>Arrangementet er drevet av frivillige ungdommer med støtte fra UngKultur Asker.</p>
+                        <p>Det vil si at det er i stor grad ungdommen selv som står for arrangementet, med planlegging, gjennomføring og opprydding. På denne måten blir arrangementet en sosial arena der unge mennesker kan bygge opp relasjoner og drive positivt arbeid. Vi oppfordrer ungdom til å melde seg inn i crew, og bidra til å utvikle og gjennomføre dette arrangementet.</p>
+                        <p>UngKultur Asker stiller med ungdomsarbeidere som bidrar med å sikre, og hjelpe til under arrangementet. På dagtid er det flere ansatte på jobb, på kvelds- og nattid er det mindre, uansett så skal UngKultur stille med minimum 2 på jobb til enhver tid gjennom arrangementet. I tillegg stiller Asker kulturhus med ansatte fra driftsavdelingen som vaktmester, og teknikere.</p>
+                    </div>
 
-            <h1>Hvordan foregår det?</h1>
-            <p>Vinterferie-varianten av LANet varer over to dager – fra lørdag kl. 13:00 til søndag kl: 14.00. Høstverie-varianten varer fra fredag kl. 18:00 til søndag kl: 12:00</p>
-                
-            <p>Phoenix LAN er for ungdom – og av ungdom. Det vil si at det er i stor grad ungdommen selv som står for arrangementet, med planlegging, gjennomføring og opprydding. På denne måten blir arrangementet en sosial arena der unge mennesker kan bygge opp relasjoner og drive positivt arbeid. Vi oppfordrer ungdom til å melde seg inn i crew, og bidra til å utvikle og gjennomføre dette arrangementet.</p>
+                    <div class="parents-information">
+                        <h2>Alder</h2>
+                        <p>Som deltaker hos Phoenix LAN har vi en <b>anbefalt</b> nedre aldersgrense, og en øvre aldersgrense.</p>
+                        <p>
+                            Vår <b>anbefalte</b> nedre aldersgrense for å delta på Phoenix LAN er årskullet som starter i 8. klasse på ungdomsskolen, altså 13-års alderen. Vi understreker at dette ikke er en fast aldersgrense men en anbefaling.<br/>
+                            Det vil si at barn under denne alderen kan delta, men at det er deg som forelder som er ansvarlig for å bestemme når barnet deres er moden nok til å dra.
+                        </p>
+                        <p>Vi oppfordrer barn under 13-års alderen til å gjøre avtale hjemme om sovetider, eventuelt henting for å sove hjemme, og avtaler om spill, inntak av godteri og lignende.</p>
+                        <p>Vi har en øvre aldersgrense på 26 år. Det vil si du kan delta på arrangementet ut samme året som du fyller 26 år. Etter dette kan du ikke lenger delta på arrangement vårt.</p>
+                        <p>Som crew hos Phoenix LAN må du være mellom 13 og 26 år.</p>
+                        <p>Ved kjøp av billett for yngre barn vil det være krav til kontaktinformasjon til foresatte.</p>
+                    </div>
 
-            <h1>Oppmøte</h1>
-            <p>Når LAN-et starter sjekker alle deltakerne inn, får på adgangsbånd og finner plassen sin. Her plasserer de pc-en og sitter store deler av tiden. Ellers er Radar Ungdomskafe åpen, og områdene i kafeen er åpent for sosiale aktiviteter. Det er egen sovesal hvor deltakerne må ordre sin egen plass med sovepose og liggeunderlag eller lignende og deltakerne blir oppfordret til å sove underveis av vertskapet. Ellers foregår det spill konkurranser lokalt, og andre «events» og konkurranser på scenen.</p>
+                    <div class="parents-information">
+                        <h2>Portforbud for ungdom under 18</h2>
+                        <p>Vi har innført portforbud imellom 23:00 og 06:00. Dette er gjort for å stoppe ungdom fra å gå rundt alene i Asker sentrum om natta.</p>
+                        <p>Dersom barnet skal få lov til å gå ut av bygget i portforbud-tiden må vi ha kommunikasjon med foresatte. Dette gjelder også for ungdom som er med i crewet.</p>
+                    </div>
 
-            <h1>Sikkerhet</h1>
-            <p>Det er mange medlemmer i ungdoms-crewet, samt ansatte, som hele tiden overvåker områdene i form av vaktposter og streifelag som går rundt omkring på bygget. Sikkerhet er en stor satsning for LANet. Det vil også være et innleid sanitets-vakt under hele arrangementet. Skulle du bli bekymret, eller lure på noe, ta kontakt med oss ansatte. Se kontaktinfo under.</p>
-            <p>Vi har også samarbeid både med Brannvesen og Politi, som ofte kommer en tur innom under arrangementet.</p>
+                    <div class="parents-information">
+                        <h2>Oppmøte og hva man skal ta med seg</h2>
+                        <p>Deltakerne møter opp til arrangementets start, sjekker inn med billetten man kjøpte, eller har fått på <a href={`${APP_PROTOCOL}://delta.${APP_HOST}`}>billettsiden</a>, og får tildelt et adgangsbånd. Deretter finner man sitteplassen sin hvor man setter opp <b>sin egen</b> datamaskin og/eller konsoll, skjerm, tastatur, mus, og eventuelt medbragt stol. Vi stiller med pult og stol, du stiller med resten.</p>
+                        <p>Gjennom helgen kan tiden brukes på sitteplassen sin for å spille med venner, og delta på konkurranser. Hvis man har lyst til på litt mer variasjon kan man gå til arkaderommet i multisalen og prøve ting man kanskje ikke har hjemme. Tidligere har dette vært vr stasjoner, racing simulatorer, nintendo switch, m.m. Dersom man har lyst på mat, drikke eller snacks kan man bevege seg til Radar Kafé hvor det er servering. Når man til slutt er trøtt og har behov for å sove kan man gå til sovesalen i teatersalen for å sove.</p>
+                    </div>
 
-            <h1>Kontakt</h1>
-            <p>Vi oppfordrer alle til å ha med seg mobil på arrangementet. Skulle det komme situasjoner hvor du må ha tak i vedkommende og ikke får kontakt, kan du kontakte oss ansatte.</p>
-            <h2>Avdelingsleder Ungkultur</h2>
-            <p>Nicolas Salvesen – Tlf: 90 56 68 55
-            <p>Nicolas.Salvesen@asker.kommune.no
-            
-            <h2>Arrangementsansvarlig Ungkultur</h2>
-            <p>Nicolai Habberstad – tlf: 47 17 36 34</p>
-            <p>Nicolai.Alexander.Habberstad@asker.kommune.no</p>
-            
-            
-            <h2>Vaktmestertelefon på kulturhuset (døgnbemannet)</h2>
-            <p>Tlf: 66 90 96 34</p>
-    
-            <p><b>Under arrangementet er vi stort sett tilgjengelig hele døgnet.!</b></p>
+                    <div class="parents-information">
+                        <h2>Sikkerhet</h2>
+                        <p>Det er mange medlemmer i ungdoms-crewet, og ansatte fra UngKultur og kulturhuset, som hele tiden overvåker områdene i form av streifelag som går rundt omkring på bygget. Sikkerhet er en stor satsning for LANet. Det vil også være et innleid sanitets-vakt under hele arrangementet. Skulle du bli bekymret, eller lure på noe, ta kontakt med oss ansatte. Se kontaktinfo under.</p>
+                        <p>Vi har også samarbeid med både Brannvesenet og Politiet som ofte kommer på besøk under arrangementet.</p>
+                    </div>
 
+                    <div class="parents-information">
+                        <h2>Kontakt</h2>
+                        <p>
+                            <b>Avdelingsleder UngKultur</b><br/>
+                            Nicolas Salvesen<br/>
+                            <a href="tel:+4790566855">+47 905 66 855</a><br/>
+                            <a href="mailto:nicolas.salvesen@asker.kommune.no">nicolas.salvesen@asker.kommune.no</a>
+                        </p>
+                        <p>
+                            <b>Arrangementsansvarlig Ungkultur</b><br/>
+                            Christian Nilsen<br/>
+                            <a href="tel:+4748031628">+47 480 31 625</a><br/>
+                            <a href="mailto:christian.nilsen@asker.kommune.no">christian.nilsen@asker.kommune.no</a>
+                        </p>
+                        <p>
+                            <b>Vaktmestertelefon på kulturhuset (Døgnbemannet)</b><br/>
+                            <a href="tel:+4766909634">+47 669 09 634</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
+
+h2 {
+    display: inline-block;
+    margin-bottom: 0;
+}
+a {
+    color: #f451a0;
+    cursor: pointer;
+}
+a:hover {
+    color: #fa83b6;
+}
+
+h2:after {
+    content: " ";
+    display: block;
+    border: 2px solid #f451a0;
+    width: 100%;
+    margin-top: 0.4em;
+}
+
+.parents-body {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    max-width: 75em;
+}
+
+.parents-container {
+    display: flex;
+    gap: 1em;
+    flex: 1;
+    flex-flow: column;
+}
+
+.parents-information {
+    margin: 0 1em;
+}
+
 .contentSimulator {
 
 }
@@ -84,8 +155,7 @@ import PageHeader from '../components/PageHeader.svelte';
 }
 
 .content-inner {
-    width: 100%;
-    max-width: 960px;
-    text-align: left;
+  text-align: left;
+  list-style-position: inside;
 }
 </style>
