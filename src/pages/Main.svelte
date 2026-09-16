@@ -95,7 +95,7 @@ Liker du programmering og teknologi? Søk Tech, da vel!
 					{#if data.event.booking_time < new Date().getTime()/1000}
 					<h3>
 						{#if data.ticket_availability.total < 20}
-							Bare {data.ticket_availability.total} billetter igjen!
+							Bare {data.ticket_availability.total} billett(er) igjen!
 						{/if}
 						{#if data.ticket_types.length > 0}
 							Fra {getMinTicketPrice(data.ticket_types)},-
