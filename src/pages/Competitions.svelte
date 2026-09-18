@@ -17,7 +17,7 @@
     <div class="content">
         <div class="content-inner">
             <div class="compo-body">
-                <div class="compo-container">
+                <!--div class="compo-container">
                     <div class="compo-header-information">
                         <div>
                             <h2>Konkurranser</h2>
@@ -27,11 +27,11 @@
                         </div>
                     </div>
                 </div>
-                <!--
+                -->
                 <div class="compo-container">
                     <div class="compo-header-information">
                         <div>
-                            <h2>Konkurranser (7)</h2>
+                            <h2>Konkurranser (5)</h2>
                             <p>Her er listen for konkurransene med informasjon og påmeldingsskjema for årets LAN!<br/>Alle konkurransene arrangeres av tech/game crewet vårt.<br/>Er du interessert i å være med å arrangere konkurranser så kan du søke deg inn <a href="https://delta.phoenixlan.no/crew">her</a></p>    
                         </div>
                         <div>
@@ -40,12 +40,13 @@
                         </div>
                         <div>
                             <h2>Premiepott</h2>
-                            <p>Premiepotten for årets LAN er på hele 12.000 kr, og spredt på vinnerne av de forskjellige konkurransene</p>    
+                            <p>Premiepotten for årets LAN er på hele 12.000 kr, inkludert i potten blir det også gitt ut billett-gavekort som kan gi deg gratis inngang på neste Phoenix LAN. Premiepotten blir spredt på vinnerne av de forskjellige konkurransene</p>    
                         </div>
                         <div>
                             <h2>Krav om påmelding</h2>
-                            <p>VIKTIG! Vi krever at du melder deg på på forhånd for at vi skal kunne vite hvem som deltar, planlegge hvem som skal spille når til hvilke tider, og vite hvem vi skal kontakte dersom man vinner konkurransen. Samle laget ditt og bestem dere allerede nå hva dere vil delta på!</p>    
+                            <p>VIKTIG! Vi krever at du melder deg på på forhånd for at vi skal kunne vite hvem som deltar, planlegge hvem som skal spille når til hvilke tider, og vite hvem vi skal kontakte dersom man vinner konkurransen.</p>    
                         </div>
+                        <!--
                         <div>
                             <h2>Oppdatering 10.09.2025</h2>
                             <p>
@@ -54,6 +55,7 @@
                                 Datasnok konkurransen for årets LAN er avlyst
                             </p> 
                         </div>
+                        -->
                     </div>
                 </div>
                 <div class="compo-container">
@@ -65,7 +67,7 @@
                                     <h4 class="compo-card-subtitle">Online, competitive, solo</h4>
                                 </div>
                                 <div class="compo-body-buttons">
-                                    <a class="compo-button primary" href="https://forms.gle/FkWZB1g9wvvNe3jL9" target="_blank">Påmeldingsskjema (13 års aldersgrense)</a>
+                                    <a class="compo-button primary" href="https://forms.gle/azxg5CjnF6BANNxo8" target="_blank">Påmeldingsskjema (13 års aldersgrense)</a>
                                     <a class="compo-button secondary" on:click={() => toggleInfoVisibility(0)}>Mer informasjon og regler</a>
                                 </div>
                                 <div class="compo-body-information" style="height:{infoVisibilityStates[0] ? "100%" : "0px"}; overflow:hidden;">
@@ -93,7 +95,7 @@
                                     <h4 class="compo-card-subtitle">Online, competitive, solo</h4>
                                 </div>
                                 <div class="compo-body-buttons">
-                                    <a class="compo-button primary" href="https://forms.gle/QEwcT3syXKzJNgWK7" target="_blank">Påmeldingsskjema</a>
+                                    <a class="compo-button primary" href="https://forms.gle/DbekWGvqKBSSdgLLA" target="_blank">Påmeldingsskjema</a>
                                     <a class="compo-button secondary" on:click={() => toggleInfoVisibility(1)}>Mer informasjon</a>
                                 </div>
                                 <div class="compo-body-information" style="height:{infoVisibilityStates[1] ? "100%" : "0px"}; overflow:hidden;">
@@ -118,7 +120,7 @@
                                     <h4 class="compo-card-subtitle">Online, casual, solo</h4>
                                 </div>
                                 <div class="compo-body-buttons">
-                                    <a class="compo-button primary" href="https://forms.gle/b67N3mhFwq1Lx3pi9" target="_blank">Påmeldingsskjema</a>
+                                    <a class="compo-button primary" href="https://forms.gle/vmPgLV12sDyYwuTS8" target="_blank">Påmeldingsskjema</a>
                                     <a class="compo-button secondary" on:click={() => toggleInfoVisibility(2)}>Mer informasjon</a>
                                 </div>
                                 <div class="compo-body-information" style="height:{infoVisibilityStates[2] ? "100%" : "0px"}; overflow:hidden;">
@@ -148,6 +150,7 @@
                         </div>
                     </div>
 
+                    <!--
                     <div class="compo-card">
                         <div class="inner-card-container">
                             <div class="compo-container-body">
@@ -174,6 +177,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
 
                     <div class="compo-card">
                         <div class="inner-card-container">
@@ -193,6 +197,7 @@
                         </div>
                     </div>
 
+                    <!--
                     <div class="compo-card-disabled">
                         <div class="inner-card-container">
                             <div class="compo-container-body">
@@ -217,8 +222,8 @@
                             </div>
                         </div>
                     </div>  
+                    -->
                 </div>  
-                -->
             </div>
         </div>
     </div>
